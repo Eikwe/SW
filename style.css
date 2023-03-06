@@ -103,7 +103,7 @@ margin-left: -140px;}
 .naBiG{
     display: flex;
     justify-content: space-between;
-    
+   
 }
 
 .naBiG2{
@@ -115,7 +115,8 @@ margin-left: -140px;}
 
 }
 .naBiG-Bild {
-    width: 50%;
+ 
+    
     float: left;
     padding: 50px;
    

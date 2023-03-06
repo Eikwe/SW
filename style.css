@@ -31,11 +31,19 @@ body {
     display: inline-block;
     font-size: 13px;
     
+    
 }
 .navlist li a{
-    color: afff;
     margin: 0 2px;
 }    
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {    
+text-decoration: underline;
+}
+
             
 .Kunst {
     float: center;
@@ -272,7 +280,7 @@ margin-left: -140px;}
         font-size: 30px;
     }
 .navlist li a{
-        color: afff;
+       
         margin: 0 30px;
     }
 .Logo {

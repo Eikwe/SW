@@ -20,12 +20,21 @@ img{ width: 100%;
         font-family: Georgia;
     }
     
-    .Impressum {
-        float: right;
-        font-size: 20px;
-        margin-right: 20px;
-    }     
+     .kontakt {
+        float: left;
+        margin-left: 25px;
+
+        
        
+        
+        
+    }     
+    .Impressum {
+        float: left;
+        margin-top: 40px;
+        margin-left: -104px;
+    }
+
     .navlist li {
         display: inline-block;
         font-size: 13px;
@@ -64,10 +73,10 @@ img{ width: 100%;
       transform: scale(1.05);
        }
        .Rathenau{
-        float: left;
+        float: right;
         width: 200px;
         height: auto;
-        margin-left: 10px;
+        margin-right: 10px;
     }    
     
     .footer{
@@ -184,19 +193,20 @@ img{ width: 100%;
     .navlist li a{
                 color: afff;
                 margin: 0 10px;
-                
+
             }
             
             .Rathenau{
-                float: left;
+                float: right;
                 width: 400px;
                 height: auto;
-                margin-left: 50px;
+                margin-right: 50px;
             }    
             .Impressum {
-                margin-right: 50px;
+                
                 font-size: 30px;
             }
+            
            
             .WinnerBilder {
                 width: 70%;
@@ -275,28 +285,33 @@ img{ width: 100%;
           -webkit-transform: scle(1.5); /* Safari */
           transform: scale(1.25);
            }
+           
     .navlist li {
             display: inline-block;
+            
             font-size: 30px;
         }
      .navlist li a{
-           
-            margin: 0 30px;
+            
+        margin: 0 60px;
+        
         }
     .Logo {
             width: 70%;
         }
     
      .Rathenau{
-            float: left;
+            float: right;
             width: 40%;;
             height: auto;
-            margin-left: 100px;
+            margin-right: 100px;
         }    
         .Impressum {
-            margin-right: 150px;
-            font-size: 30px;
+            margin-left: -10%;
+            margin-top: 4%;
+            font-size: 50px;
         }
+    
         .Spenden {
             padding: 250px;
             
@@ -348,7 +363,8 @@ img{ width: 100%;
         }
         .footer{
             background-color: rgb(78, 40, 40);
-            height: 30%;
+            height: 300px;
+            font-size: 50px;
         }
         
     }

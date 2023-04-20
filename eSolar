@@ -1,0 +1,86 @@
+<html>
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GE34BCJEDH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GE34BCJEDH');
+</script>
+    <link href="style.css" rel="stylesheet">
+    <title> Solarprojekt </title>
+    <link rel="icon" type="image/png" href="Icon.jpg">
+   
+</head>
+<body>
+
+    <header>
+    
+        <nav class="navbar">
+            <ul class="navlist">
+                <li><a href="index.html"> home page </a></li>
+                <li><a href="Solarprojekt.html"> solar project </a></li>
+                <li><a href="Kunstprojekt.html"> art project </a></li>
+                <li><a href="Partnerschaft.html"> partnership </a></li>
+                <li><a href="aktuelles.html"> currently  </a></li>
+            </ul>
+
+        </nav>
+        </header>
+    <br>
+        <div class="Headline">    
+            <img class="Headline" src="Solar.jpg">
+            <center> <h2> <b> Bau einer Solaranlage für die Partnerschule </b> </h2> 
+            Solarprojekt der 11.Klassen</center>
+         </div>
+         
+        
+        <br> 
+        Mit unserer Partnerschule in Ghana, der St. Luke Berufsschule, möchten wir eine Solaranlage für diese Schule errichten.
+        <br> Hierdurch soll die autarke Stromversorgung der Schule sichergestellt werden.
+        <br> Zudem wird den Schülern der Berufsschule der praktische Zugang zu der "Zukunftstechnologie" Solaranlage ermöglicht.   
+        
+
+        
+<br>
+    <center> <img class="Logo" src="Logo.jpg"> 
+    <h2> Der Verein naBiG </h2>
+    </center>
+    <div class="naBiG"><img class="naBiG-Bild" src="naBiG-Infos.jpg"> 
+        <div class="naBiG-Text"> naBig entwickelt Lösungen für nachhaltige Bauweisen in Ghana. Dabei beschäftigen sie sich vor allem mit nachhaltigen Ziegelsteinen. </div> </div>
+    <br>
+    <img class="naBiG-Bild2" src="naBiG-Infos2.jpg">  </div> 
+
+    <div class="Finanzierung">
+     <p><h2> Finanzierung des Projekts </h2>
+    Um das Projekt zu realisieren, haben wir bei einer Schulveranstaltung im November unser Projekt vorgestellt und konnten aufgrund des großen Interesses der Eltern zahlreiche Spendengelder sammeln.
+    Bei dieser Aktion haben wir selbstdekorierte Schokolade verkauft und den zuvor erstellten Flyer verteilt. --> 
+ 
+    <a href="Flyer.pdf" target="_blank"> Flyer </a>
+    <br>In den nächsten Monaten wollen wir noch die letzten fehlenden Spendengelder sammeln. 
+    
+    </p> </div>
+    
+    <div class="Spenden">
+        <h3 class="textposition">
+        <font color="white">  Sie wollen unser Projekt unterstützen? </font><br> </h3>
+        <a href="https://www.nabig.de/helfen/"target="_blank"> <button class="Button"> Spenden   </font> </button>  </a>
+        <br> 
+        <div class="Positionspende"> <p> <font color="white"> oder: <br> <u> <b> Konto </b><br> </u> Nachhaltiges Bauen in Ghana e.V  <br> IBAN: DE98 5408 0004 1540 53 <br>
+        BIC: GENODEF1SLR <br> Bank: VR-Bank Altenburger Land <br> <b> <br> !!! Verwendungszweck: Schulprojekt-Ghana-WRS-SW</b> </font> </p>
+        </div>
+        
+
+    </div>    
+<hr>  
+
+
+<footer class="footer">
+    <a class="sol-impressum" href="Impressum.html"><font color="white">Impressum</font></a>
+    <a class="solarium" href="kontakt.html"><font color="white"> Kontakt </font></a>
+        <a href="index.html"><img class="Rathenau" src="LogoRathenau.jpg"> </a>
+</footer>
+</body>
+</html>

@@ -43,8 +43,8 @@ img{ width: 100%;
 
     .navlist li {
         display: inline-block;
-        font-size: 12px;
-        margin: -7px;
+        font-size: 35px;
+      
        
         
         
@@ -185,7 +185,11 @@ img{ width: 100%;
         
     }
 
-    @media only screen and (min-width: 800px) {
+    .pseminar {
+        padding: 5%;
+    }
+
+    @media only screen and (min-width: 1000px) {
         body {
             margin-left: 30px;
             margin-right: 30px;

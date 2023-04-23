@@ -166,12 +166,18 @@ img{ width: 100%;
         padding: 5%;
     }
 
-    .vortrag {
+    .zweiercontainer1 {
         display: flex;
         width: 45%;
         
     }
-    
+    .ausstellung {
+        display: flex;
+        width: 45%;
+        
+       
+        
+    }
     .vortrag1 , .vortrag2 {
         padding: 5%;
         

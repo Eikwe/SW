@@ -185,6 +185,7 @@ img{ width: 100%;
         }
     .IconsD {
                 display:flex;
+                
                  }
                 
                 
@@ -277,19 +278,19 @@ img{ width: 100%;
             width: 50%;
             height: 50%;
             padding-left: 5%;
-            margin-top: 5%;
+            margin-top: 10%;
 
             
         }
         .seminar {
             display: flex;
-            background-color: red;
-           
-            
+            background-color: #FFDDDD;
+            padding: 4%;
         }
         .psemtext {
             float: left;
             width: 50%;
+            
 
         }
         }

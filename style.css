@@ -203,6 +203,7 @@ img{ width: 100%;
     
     
     
+    
     @media only screen and (min-width: 1000px) {
         body {
             margin-left: 30px;
@@ -302,9 +303,9 @@ img{ width: 100%;
         
         .pseminar{
             float: right; 
-            width: 38%;
-            height: 38%;
-            padding-left: 5%;
+            width: 35%;
+            height: 35%;
+            
             margin-top: 40%;
 
             
@@ -312,12 +313,14 @@ img{ width: 100%;
         .seminar {
             display: flex;
             background-color: #FFDDDD;
-            padding: 4%;
+           
         }
         .psemtext {
             float: left;
             width: 60%;  
         }
+        
+    
     }
             
     @media only screen and (min-width: 1100px) {
@@ -456,20 +459,29 @@ img{ width: 100%;
         }
 
         .pseminar{
-            margin-top: 10%;
-               
-                width: 50%;
-                height: 50%;
-    
+            margin-top: 8%;
+            width: 45%;
+            float: right; 
 
             
         }
+        .seminar {
+            display: flex;
+            background-color: #FFDDDD;
+            padding: -5%;
+           
+        }
         
+        .psemtext {
+            width: 60%;
+        }
     }
         
     
     
-        
+    
+   
+  
         
         
     

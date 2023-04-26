@@ -44,10 +44,6 @@ img{ width: 100%;
     .navlist li {
         display: inline-block;
         font-size: 32px;
-      
-       
-        
-        
     }
     .navlist li a{
         margin: 0 1px;
@@ -305,7 +301,7 @@ img{ width: 100%;
         }
         
         .titel2 {
-        margin-left: 20px;
+        margin-left: 50px;
             margin-top: 40px;
         }
         .psemtext {

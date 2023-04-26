@@ -283,30 +283,20 @@ img{ width: 100%;
         }
         
         .naBiG-Text {
-            padding-top: 130px;
+            padding-top: 130px;}
         
-        }
-    
         .naBiG-Text2 {
             float: left;
             margin-left: -145%;
            font-size: 25px;
-           padding-top: 50px;
-        }
-        
+           padding-top: 50px;}
         .pseminar{
             float: right; 
             width: 50%;
             height: 50%;
-            margin-left: 10%;
-
-            
-        }
+            margin-left: 10%;}
         .seminar {
-            display: flex;
-            
-           
-        }
+            display: flex; }
         .background {
         background-color: #FFDDDD;
         }

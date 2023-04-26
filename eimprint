@@ -27,11 +27,9 @@ gtag('js', new Date());
 gtag('config', 'G-GE34BCJEDH');
   
 </script>
-  <title> Impressum </title>
+  <title> imprint </title>
 </head>
-
-
-<h2> Impressum </h2>
+<h2> imprint </h2>
 
 Verantwortlich für den Inhalt:
 Walther-Rathenau-Gymnasium und Realschule
@@ -42,8 +40,9 @@ last change: 26.04.2023
 <br>
 <br>
 <footer class="footer">
-  <a class="Impressum" href="Impressum.html"><font color="white">Impressum</font></a>
-  <a class="kontakt" href="kontakt.html"><font color="white"> Kontakt </font></a>
-      <a href="index.html"><img class="Rathenau" src="LogoRathenau.jpg"> </a>
+  <a class="Impressum" href="imprint.html"><font color="white">Impressum</font></a>
+  <a class="kontakt" href="ekontakt.html"><font color="white"> Kontakt </font></a>
+      <a href="englisch.html"><img class="Rathenau" src="LogoRathenau.jpg"> </a>
 </footer>
+<a href="Impressum.html"> German </a>
 </head> 

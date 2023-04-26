@@ -298,7 +298,8 @@ img{ width: 100%;
             float: right; 
             width: 50%;
             height: 50%;
-            margin-left: 10%;}
+            margin-left: 10%;
+            margin-top: 10%;}
         
         .seminar {
             display: flex; }

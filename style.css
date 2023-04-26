@@ -266,10 +266,7 @@ img{ width: 100%;
         
         .naBiG{
             display: flex;
-            justify-content: space-between;
-            
-            
-        }
+            justify-content: space-between; }
         
         .naBiG2{
             display: flex;
@@ -312,7 +309,7 @@ img{ width: 100%;
         
         .titel2 {
         margin-left: 30px;
-         margin-top: 50px;
+         
         }
          .Buttonklein {
     font-size: 1.5rem;

@@ -298,7 +298,7 @@ img{ width: 100%;
             float: right; 
             width: 50%;
             height: 50%;
-            margin-left: 10%;
+            
             margin-top: 10%;}
         
         .seminar {
@@ -325,7 +325,7 @@ img{ width: 100%;
     }
         .psemtext {
             float: left;
-            width: 60%;  
+            width: 62%;  
             font-size: 25px
         }
         

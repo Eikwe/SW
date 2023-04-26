@@ -306,8 +306,11 @@ img{ width: 100%;
         }
         .seminar {
             display: flex;
-            background-color: #FFDDDD;
+            
            
+        }
+        .background {
+        background-color: #FFDDDD;
         }
         .psemtext {
             float: left;

@@ -312,6 +312,11 @@ img{ width: 100%;
         .background {
         background-color: #FFDDDD;
         }
+        
+        .titel {
+        margin-left: 20px;
+            margin-top: 10px;
+        }
         .psemtext {
             float: left;
             width: 60%;  

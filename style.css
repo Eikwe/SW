@@ -168,54 +168,34 @@
   
 .icons img {
     width: 20vw;
-}            
+}      
+
+body { 
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+
+.Spenden {
+    padding: 250px;
+    
 }    
+
+
+.PositionSpende {
+margin-left: -180px;
+
+}
+
+
+/* passt so */
+.navlist li {
+    font-size: 2vw; }
+.navlist li a{
+        margin: 0 2vw;
+    }  
+}
+
    
-     
-    @media only screen and (min-width: 1100px) {
-      
-        body { 
-            margin-left: 10%;
-            margin-right: 10%;
-            
-        }
-    .IconsD {
-        display:flex;
-        margin-left: 70px;
-        margin-right: 70px; }
-    
-    .Kunst {
-            float: left;
-            width: 80%;
-            
-           }
-    .Solar {
-            float: center;
-            width: 80%;
-            
-           }
-    .Partner {
-           float: right;
-           width: 80%;
-           }
-           
-        
-        .Spenden {
-            padding: 250px;
-            
-        }    
-       
-       
-       .PositionSpende {
-        margin-left: -180px;
-    
-       }
-       
-   
-        /* passt so */
-        .navlist li {
-            font-size: 2vw; }
-        .navlist li a{
-                margin: 0 2vw;
-            }  
-        }
+ 

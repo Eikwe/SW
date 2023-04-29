@@ -28,7 +28,9 @@
         
         display: inline-block;
         font-size: 3vw;
+        margin: 0 0.7vw;
     }
+    
    
     a {
         text-decoration: none;
@@ -37,11 +39,12 @@
     .navlist a:hover {    
     text-decoration: underline;
     background-color: white;
+    color: black;
     }
    
   
-    .Kunst:hover, .Solar:hover, .Partner:hover {
-        transform: scale(140%);
+    .icons a:hover {
+        transform: scale(130%);
        }
 
     
@@ -140,7 +143,9 @@
 .icons {
     display:flex;
     justify-content: space-between;
-    padding: 5vw;
+    padding: 4vw;
+    text-align: center;
+   
 } 
 .icons img {
     width: 25vw;
@@ -149,16 +154,21 @@
 .unsereprojekte {
     background-color: rgb(105, 202, 226);
 }
- 
+
+.icons a {
+    color: white;
+    font-size: 2.5vw;
+}
     @media only screen and (min-width: 1000px) {
 /*die nächsten zwei gehören zum Sonderfall*/
     .bild-sonderfall {
-            width: 70%;
+            width: 60%;
             margin-right: 5%;
         }
     .textbild {
      display: flex;
     justify-content: space-between; 
+    align-items: center;
            }
 
 .bildlinks {

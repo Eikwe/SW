@@ -1,4 +1,4 @@
- img{ width: 100%;
+img{ width: 100%;
     height: auto;} 
     
     h1, h2 {    
@@ -135,20 +135,9 @@
    footer a {
     width: 40%;
    }
+    
 
-
-.icons {
-    display:flex;
-    justify-content: space-between;
-    padding: 5vw;
-} 
-.icons img {
-    width: 25vw;
-}
-
-.unsereprojekte {
-    background-color: rgb(105, 202, 226);
-}
+    
  
     @media only screen and (min-width: 1000px) {
 /*die nächsten zwei gehören zum Sonderfall*/
@@ -166,9 +155,10 @@
     margin-right: 5%;
 }
   
-.icons img {
-    width: 20vw;
-}            
+                
+               
+    
+      
 }    
    
      

@@ -160,7 +160,7 @@
     color: white;
     font-size: 2.5vw;
 }
-    @media only screen and (min-width: 990px) {
+    @media only screen and (min-width:1000px) {
 /*die nächsten zwei gehören zum Sonderfall*/
     .bild-sonderfall {
             width: 60%;
@@ -202,9 +202,13 @@ margin-left: -180px;
     margin: 0 2vw;}
 
 }
-
+body { 
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
    
-@media only screen and (min-width: 990px) {
+@media only screen and (min-width: 1200px) {
     body { 
         margin-left: 10%;
         margin-right: 10%;

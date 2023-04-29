@@ -160,7 +160,7 @@
     color: white;
     font-size: 2.5vw;
 }
-    @media only screen and (min-width: 1000px) {
+    @media only screen and (min-width: 990px) {
 /*die nächsten zwei gehören zum Sonderfall*/
     .bild-sonderfall {
             width: 60%;
@@ -181,11 +181,7 @@
     width: 20vw;
 }      
 
-body { 
-    margin-left: 10%;
-    margin-right: 10%;
-    
-}
+
 
 
 .Spenden {
@@ -208,4 +204,9 @@ margin-left: -180px;
 }
 
    
- 
+@media only screen and (min-width: 990px) {
+    body { 
+        margin-left: 10%;
+        margin-right: 10%;
+        
+    }}

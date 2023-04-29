@@ -202,10 +202,9 @@ margin-left: -180px;
 
 /* passt so */
 .navlist li {
-    font-size: 2vw; }
-.navlist li a{
-        margin: 0 2vw;
-    }  
+    font-size: 2vw; 
+    margin: 0 2vw;}
+
 }
 
    

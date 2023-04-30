@@ -44,7 +44,7 @@
    
   
     .icons a:hover {
-        transform: scale(130%);
+        transform: scale(125%);
        }
 
     
@@ -203,8 +203,8 @@ margin-left: -180px;
 
 }
 body { 
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
     
 }
    

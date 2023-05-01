@@ -24,19 +24,39 @@
         text-align: center;
         
     }
-    .navlist li {
+    
+    nav li {
         
         display: inline-block;
         font-size: 3vw;
-        margin: 0 1vw;
+        
+    }
+    nav ul li{
+        position: relative;
+    }
+    nav ul li a {
+        display: block;
+       
     }
     
-   
+    nav ul li ul{
+        display: none;
+        position: absolute;
+        background-color:rgb(143, 241, 195);
+    }
+    nav ul li:hover ul {
+        display: block;
+        z-index: 1;
+       
+    }
+    nav ul li ul li a {
+       border-radius: 10px;
+    }
     a {
         text-decoration: none;
         color: black;
     }
-    .navlist a:hover {    
+    nav a:hover {    
     text-decoration: underline;
     background-color: white;
     color: black;
@@ -197,7 +217,7 @@ margin-left: -180px;
 
 
 /* passt so */
-.navlist li {
+nav li {
     font-size: 2vw; 
     margin: 0 2vw;}
 

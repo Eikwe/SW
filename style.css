@@ -19,7 +19,11 @@
         
     }
     
-
+    nav li {
+       
+        margin: 0 2vw;}
+    
+    
     ul{
         text-align: center;
         
@@ -214,18 +218,17 @@ margin-left: -180px;
 }
 
 
-/* passt so */
-nav li {
-    font-size: 2vw; 
-    margin: 0 2vw;}
-
-}
 body { 
     margin-left: 3%;
     margin-right: 3%;
     
 }
-   
+  
+    nav li {
+       font-size: 2vw;
+        margin: 0 2vw;}
+    
+}
 @media only screen and (min-width: 1200px) {
     body { 
         margin-left: 10%;

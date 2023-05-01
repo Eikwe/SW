@@ -49,9 +49,7 @@
         z-index: 1;
        
     }
-    nav ul li ul li a {
-       border-radius: 10px;
-    }
+    
     a {
         text-decoration: none;
         color: black;

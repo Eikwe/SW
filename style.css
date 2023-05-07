@@ -262,4 +262,8 @@ body {
 .englisch {
     height: 3vh;
 }
+nav ul li ul {
+    background-color:rgb(23, 104, 62);
 }
+}
+

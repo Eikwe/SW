@@ -100,12 +100,13 @@
     border-color: green;
     }
     .newsbutton {
-        font-size: 3vw;
+        font-size: 3vw ;
+
         font-weight: bold;
         padding: 9% 9%;
         cursor: pointer;
+        background-color: #e09c9c;
         color: white;
-      
         border-color:  white;
     }
 

@@ -30,7 +30,7 @@
         
         display: inline-block;
         font-size: 115%;
-        margin: 0 1.8vw 0 0;
+        margin: 0 0.5vw 0 0;
         
     }
  
@@ -70,6 +70,8 @@
    
     .englisch {
         height: 2vh;
+        width: 3vw;
+        
     }
     .icons a:hover {
         transform: scale(125%);
@@ -261,6 +263,7 @@ body {
     }
 .englisch {
     height: 3vh;
+    width: auto;
 }
 nav ul li ul {
     background-color:rgb(23, 104, 62);

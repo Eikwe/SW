@@ -69,7 +69,7 @@
     }
    
     .englisch {
-        height: 4vw;
+        height: 2vh;
     }
     .icons a:hover {
         transform: scale(125%);
@@ -252,7 +252,7 @@ body {
         margin: 0 1.8vw;}
     
 }
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1400px) {
     body { 
         margin-left: 10%;
         margin-right: 10%;
@@ -260,6 +260,6 @@ body {
         
     }
 .englisch {
-    height: 2vw;
+    height: 3vh;
 }
 }

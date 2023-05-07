@@ -70,7 +70,7 @@
    
     .englisch {
         height: 2vh;
-      
+        width: 3.2vw;
         
     }
     .icons a:hover {
@@ -263,6 +263,7 @@ body {
     }
 .englisch {
     height: 3vh;
+    width: auto;
   
 
 }

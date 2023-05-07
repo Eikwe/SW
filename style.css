@@ -29,7 +29,7 @@
     nav li {
         
         display: inline-block;
-        font-size: 100%;
+        font-size: 110%;
         margin: 0 0.5vw 0 0;
         
     }
@@ -70,7 +70,7 @@
     }
    
     .englisch {
-        height: 2vh;
+        height: 3vh;
         width: auto;
         
         

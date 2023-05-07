@@ -29,7 +29,7 @@
     nav li {
         
         display: inline-block;
-        font-size: 115%;
+        font-size: 95%;
         margin: 0 0.5vw 0 0;
         
     }
@@ -70,7 +70,7 @@
    
     .englisch {
         height: 2vh;
-        width: 3vw;
+      
         
     }
     .icons a:hover {
@@ -263,10 +263,10 @@ body {
     }
 .englisch {
     height: 3vh;
-    width: auto;
-}
-nav ul li ul {
-    background-color:rgb(23, 104, 62);
-}
-}
+  
 
+}
+nav li {
+    font-size: 110%;
+}
+}

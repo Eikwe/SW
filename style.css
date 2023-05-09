@@ -30,7 +30,7 @@
         
         display: inline-block;
         font-size: 110%;
-        margin: 0 0.5vw 0 0;
+        margin: 0 1.3vw 0 0;
         
     }
  
@@ -70,7 +70,7 @@
     }
    
     .englisch {
-        height: 3vh;
+        height: 1.5vh;
         width: auto;
         
         
@@ -147,6 +147,11 @@
     padding: 3%;
    
 }
+.backgroundgreen {
+    background-color: #afe0c9;
+    padding: 3%;
+   
+}
 
 .bildundtext {
     display: flex;
@@ -203,7 +208,42 @@
     color: white;
     font-size: 2.5vw;
 }
-    @media only screen and (min-width:1100px) {
+
+#slider {
+    overflow: hidden;
+    }
+
+#slider figure  {
+    position: relative;
+    width: 700%;
+    margin: 0;
+    left: 0;
+    animation: 25s slider infinite;}
+
+#slider figure img {
+    width: 14.2857%;
+    float: left; }
+
+
+
+@keyframes slider {
+    0% {left: 0;}
+    11% {left: 0;}
+    16% {left: -100%;}
+    28% {left: -100%;}
+    33% {left: -200%; }
+    50% {left: -200%; }
+    55% {left: -300%; }
+    61% {left: -300%;}
+    66% {left: -400%;}
+    78% {left: -400%;}
+    83% {left: -500%;}
+    95% {left: -500%;}
+    100% {left: -600%;}
+  }
+
+
+    @media only screen and (min-width:1200px) {
 /*die nächsten zwei gehören zum Sonderfall*/
 
 .titelcontainer {
@@ -212,8 +252,9 @@
     align-items: center;        
 }
     .bild-sonderfall {
-            width: 60%;
+            width: 58%;
             margin-right: 5%;
+            
         }
     .textbild {
      display: flex;
@@ -263,12 +304,13 @@ body {
      
         
     }
-.englisch {
-    height: 3vh;
-    width: auto;
-  
 
-}
+    .englisch {
+        height: 4vh;
+        width: auto;
+    }
+        
+
 nav li {
     font-size: 110%;
 }

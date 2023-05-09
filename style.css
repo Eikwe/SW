@@ -133,7 +133,6 @@
 
     .zweiercontainer {
         display: flex;
-        width: 45%;
         justify-content: space-between;
         align-items: center;        
     }

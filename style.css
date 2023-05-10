@@ -242,7 +242,7 @@
   }
 
 
-    @media only screen and (min-width:1150px) {
+    @media only screen and (min-width:1100px) {
 /*die nächsten zwei gehören zum Sonderfall*/
 
 .titelcontainer {
@@ -296,7 +296,7 @@ body {
         margin: 0 1.8vw;}
      
        .englisch {
-        height: 3vh;
+        height: 5vh;
         width: auto;
         
         

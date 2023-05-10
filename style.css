@@ -239,8 +239,12 @@
     95% {left: -500%;}
     100% {left: -600%;}
   }
-
-
+@media only screen and (min-width: 870px) {
+  .englisch {
+        height: 1.5vh;
+        width: auto;
+}
+}
     @media only screen and (min-width:1090px) {
 /*die nächsten zwei gehören zum Sonderfall*/
 
@@ -269,7 +273,7 @@
     width: 20vw;
 }      
 
-
+  
 
 
 .Spenden {
@@ -301,6 +305,7 @@ body {
     font-size: 90%;
 }
 }
+
 @media only screen and (min-width: 1300px) {
     body { 
         margin-left: 10%;

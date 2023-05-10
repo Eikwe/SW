@@ -13,9 +13,9 @@
     }
     
     body {
-        margin-left: 2%;
-        margin-right: 2%;
-        font-size: 1vw;
+        margin-left: 3%;
+        margin-right: 3%;
+        font-size: 1.8vw;
         font-family: Georgia;
         
     }
@@ -29,7 +29,7 @@
     nav li {
         
         display: inline-block;
-        justify-content: space-between;
+        
         margin: 0 1.3vw 0 0;
         
     }
@@ -241,7 +241,7 @@
   }
 @media only screen and (min-width: 1000px) {
   .englisch {
-        height: 4vh;
+        height: 3vh;
         width: auto;
 }
 }

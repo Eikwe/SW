@@ -294,6 +294,13 @@ body {
     nav li {
      
         margin: 0 1.8vw;}
+     
+       .englisch {
+        height: 3vh;
+        width: auto;
+        
+        
+    }
     
 }
 @media only screen and (min-width: 1300px) {

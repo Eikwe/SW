@@ -19,8 +19,7 @@
         font-family: Georgia;
     }
     ul{
-        text-align: center;
-        
+        text-align: center;  
     }
     
     nav li {
@@ -109,19 +108,12 @@
     .button:hover {
     background-color: rgb(63, 236, 63) }
 
-   
-
-
-
-
     .containerdrei {
         display: flex;
         width: 30%;
-        text-align: center;
-        
-        
+        text-align: center; 
     }
-  
+ 
     .zweiercontainer {
         display: flex;
         widht: 40%;

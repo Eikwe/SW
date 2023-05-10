@@ -34,9 +34,7 @@
        
     }
     nav ul li a {
-        display: block;
-
-      
+        display: block;  
     }
    
     nav ul li ul{
@@ -63,7 +61,7 @@ nav a:hover {
  color: black;
     }
 .englisch {
-  height: 2.5vh;
+  height: 1.7vh;
   width: auto;}
 .icons a:hover {
  transform: scale(125%);}
@@ -217,7 +215,7 @@ nav a:hover {
   }
 @media only screen and (min-width: 1000px) {
   .englisch {
-        height: 2vh;
+        height: 3vh;
         width: auto;
 }
  .titelcontainer {

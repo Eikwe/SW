@@ -1,9 +1,8 @@
- img{ width: 100%;
+img{ width: 100%;
     height: auto;} 
     
     h1, h2 {    
         text-align: center;
-        font-size: 4vw;
     }
 
     ul {   
@@ -26,7 +25,7 @@
         
         display: inline-block;
         font-size: 3vw;
-        margin: 0 2vw 0 0;  
+        margin: 0 1vw 0 0;  
     }
  
     nav ul li{
@@ -226,7 +225,13 @@ nav a:hover {
 }
     @media only screen and (min-width:1090px) {
 /*die nächste gehört zum Sonderfall*/
+nav li{
+    font-size: 2vw;
+    margin: 0 0.8vw 0 0; 
+}
 
+body{
+font-size: 1.6vw;}
 
     .bild-sonderfall {
             width: 58%;
@@ -263,23 +268,17 @@ margin-left: -180px;
 }
 
 
-body { 
-    margin-left: 3%;
-    margin-right: 3%;
-    
-}
+
   
     nav li {
      
-        margin: 0 1.8vw;}
+        margin: 0 1.8vw 0 0;}
      
      
         
     }
-    .textsonder{
-    font-size: 90%;
-}
-}
+  
+
 
 @media only screen and (min-width: 1300px) {
     body { 
@@ -292,8 +291,5 @@ body {
     }
         
 
-nav li {
-    font-size: 110%;
-}
 
 }

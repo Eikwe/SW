@@ -88,7 +88,6 @@ nav a:hover {
     }
     .newsbutton {
         font-size: 3vw ;
-
         font-weight: bold;
         padding: 9% 9%;
         cursor: pointer;
@@ -134,7 +133,6 @@ nav a:hover {
     justify-content: space-between;
     align-items: center;
 }
-
 .bildlinks {
     width: 70%;
     margin-right: 5%;
@@ -219,7 +217,7 @@ nav a:hover {
   }
 @media only screen and (min-width: 1000px) {
   .englisch {
-        height: 3vh;
+        height: 2vh;
         width: auto;
 }
  .titelcontainer {

@@ -131,7 +131,7 @@
   
     .zweiercontainer {
         display: flex;
-        widht: 45%;
+        widht: 40%;
         justify-content: space-between;
         align-items: center;        
     }
@@ -241,7 +241,7 @@
   }
 
 
-    @media only screen and (min-width:1100px) {
+    @media only screen and (min-width:1090px) {
 /*die nächsten zwei gehören zum Sonderfall*/
 
 .titelcontainer {

@@ -55,7 +55,6 @@
     nav ul li:hover ul {
         display: block;
         z-index: 1;
-       
     }
     nav ul li ul li {
         white-space: nowrap;}
@@ -68,7 +67,6 @@
     background-color: white;
     color: black;
     }
-   
     .englisch {
         height: 1.5vh;
         width: auto;
@@ -296,21 +294,18 @@ body {
      
         margin: 0 1.8vw;}
      
-       .englisch {
-        height: 70px;
-        
+     
         
     }
-    
+    .textsonder{
+    font-size: 90%;
+}
 }
 @media only screen and (min-width: 1300px) {
     body { 
         margin-left: 10%;
-        margin-right: 10%;
-     
-        
+        margin-right: 10%;      
     }
-
     .englisch {
         height: 4vh;
         width: auto;
@@ -320,7 +315,5 @@ body {
 nav li {
     font-size: 110%;
 }
-.textsonder{
-    font-size: 90%;
-}
+
 }

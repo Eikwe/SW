@@ -13,9 +13,9 @@
     }
     
     body {
-        margin-left: 25px;
-        margin-right: 25px;
-        font-size: 35px;
+        margin-left: 2%;
+        margin-right: 2%;
+        font-size: 1vw;
         font-family: Georgia;
         
     }
@@ -241,7 +241,7 @@
   }
 @media only screen and (min-width: 870px) {
   .englisch {
-        height: 1.5vh;
+        height: 4vh;
         width: auto;
 }
 }

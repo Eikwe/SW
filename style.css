@@ -229,15 +229,16 @@
         height: 3vh;
         width: auto;
 }
-}
-    @media only screen and (min-width:1090px) {
-/*die nächsten zwei gehören zum Sonderfall*/
-
-.titelcontainer {
+ .titelcontainer {
     display: flex;
     justify-content: space-between;
     align-items: center;        
 }
+}
+    @media only screen and (min-width:1090px) {
+/*die nächste gehört zum Sonderfall*/
+
+
     .bild-sonderfall {
             width: 58%;
             margin-right: 5%;

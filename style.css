@@ -57,32 +57,25 @@
         text-decoration: none;
         color: black;
     }
-    nav a:hover {    
-    text-decoration: underline;
-    background-color: white;
-    color: black;
+nav a:hover {    
+ text-decoration: underline;
+ background-color: white;
+ color: black;
     }
-    .englisch {
-        height: 2.5vh;
-        width: auto;
-    }
-    .icons a:hover {
-        transform: scale(125%);
-       
-    }
-    .Spenden {
-        background-image: url("Titelbild.jpg");
-        background-size: cover;
-        background-position: top;
-        padding: 170px;
-      
-    }    
-    .textposition {
-    text-align: left;
-    margin-left: -15%;
-    margin-top: -17%;
-    
-    }
+.englisch {
+  height: 2.5vh;
+  width: auto;}
+.icons a:hover {
+ transform: scale(125%);}
+ .Spenden {
+   background-image: url("Titelbild.jpg");
+   background-size: cover;
+   background-position: top;
+   padding: 170px;}    
+.textposition {
+  text-align: left;
+  margin-left: -15%;
+  margin-top: -17%;}
    
     .Button {
     font-size: 30px;

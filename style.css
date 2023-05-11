@@ -20,14 +20,16 @@ img{ width: 100%;
     ul{
         text-align: center;  
     }
-    
-    nav li {
-        
+    nav li{
+        font-size: 2vh;
+        margin: 0 1.8vw 0 0; 
         display: inline-block;
-        font-size: 3vw;
-        margin: 0 1vw 0 0;  
+        
     }
- 
+  
+    .englisch {
+        height: 1.7vh;
+        width: auto;}
     nav ul li{
         position: relative;
        
@@ -59,9 +61,7 @@ nav a:hover {
  background-color: white;
  color: black;
     }
-.englisch {
-  height: 1.5vh;
-  width: auto;}
+
 .icons a:hover {
  transform: scale(125%);}
  .Spenden {
@@ -212,23 +212,28 @@ nav a:hover {
     95% {left: -500%;}
     100% {left: -600%;}
   }
-@media only screen and (min-width: 1000px) {
-  .englisch {
-        height: 2.3vh;
-        width: auto;
-}
- .titelcontainer {
+
+
+
+    @media only screen and (min-width:1050px) {
+/*die nächste gehört zum Sonderfall*/
+
+.titelcontainer {
     display: flex;
     justify-content: space-between;
     align-items: center;        
 }
-}
-    @media only screen and (min-width:1090px) {
-/*die nächste gehört zum Sonderfall*/
 nav li{
-    font-size: 2vw;
+    font-size: 4vh;
     margin: 0 0.8vw 0 0; 
+    
 }
+ul {
+    background-color: red;
+}
+.englisch {
+    height: 4vh;
+    width: auto;}
 
 body{
 font-size: 1.6vw;}
@@ -289,7 +294,15 @@ margin-left: -180px;
         height: 4vh;
         width: auto;
     }
+    nav li{
+        font-size: 4vh;
+        margin: 0 1.8vw 0 0; 
         
+    }
+    ul {
+        background-color: rgb(128, 127, 197);
+    }
 
 
 }
+

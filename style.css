@@ -142,7 +142,7 @@ nav a:hover {
 }
 
 
-.footer {
+footer {
     background-color:rgb(78, 40, 40);
     display: flex;
     justify-content: space-between;
@@ -298,9 +298,6 @@ margin-left: -180px;
         font-size: 4vh;
         margin: 0 1.8vw 0 0; 
         
-    }
-    ul {
-        background-color: rgb(128, 127, 197);
     }
 
 

@@ -27,9 +27,6 @@ img{ width: 100%;
         font-size: 3vw;
         margin: 0 1vw 0 0;  
     }
-nav li img {
-    font-size: 3vh;}
-}
  
     nav ul li{
         position: relative;
@@ -216,7 +213,10 @@ nav a:hover {
     100% {left: -600%;}
   }
 @media only screen and (min-width: 1000px) {
- 
+  .englisch {
+        height: 2.3vh;
+        width: auto;
+}
  .titelcontainer {
     display: flex;
     justify-content: space-between;
@@ -227,10 +227,9 @@ nav a:hover {
 /*die nächste gehört zum Sonderfall*/
 nav li{
     font-size: 2vw;
-    margin: 0 1.8vw 0 0;
+    margin: 0 0.8vw 0 0; 
 }
-        nav li img {
-            font-size: 2vh;}
+
 body{
 font-size: 1.6vw;}
 
@@ -271,7 +270,9 @@ margin-left: -180px;
 
 
   
-  
+    nav li {
+     
+        margin: 0 1.8vw 0 0;}
      
      
         

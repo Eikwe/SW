@@ -28,7 +28,7 @@ img{ width: 100%;
         margin: 0 1vw 0 0;  
     }
 nav li img {
-font-size: 3vw;
+    font-size: 3vh;}
 }
  
     nav ul li{
@@ -230,7 +230,7 @@ nav li{
     margin: 0 1.8vw 0 0;
 }
         nav li img {
-            font-size: 2vw;}
+            font-size: 2vh;}
 body{
 font-size: 1.6vw;}
 

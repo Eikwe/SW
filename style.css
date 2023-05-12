@@ -27,7 +27,7 @@ img{ width: 100%;
         
     }
   
-    .englisch {
+    nav li img {
         height: 1.7vh;
         width: auto;}
     nav ul li{
@@ -251,7 +251,7 @@ nav li{
     
 }
 
-.englisch {
+nav li img {
     height: 4vh;
     width: auto;}
 
@@ -310,7 +310,7 @@ margin-left: -180px;
         margin-left: 10%;
         margin-right: 10%;      
     }
-    .englisch {
+    nav li img {
         height: 3.4vh;
         width: auto;
     }

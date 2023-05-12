@@ -27,7 +27,7 @@ img{ width: 100%;
         
     }
   
-    nav li img {
+    .englisch {
         height: 1.7vh;
         width: auto;}
     nav ul li{
@@ -171,7 +171,7 @@ footer {
     width: 25vw;
 }
 
-.backgroundblue {
+.unsereprojekte {
     background-color: rgb(105, 202, 226);
 }
 
@@ -214,8 +214,8 @@ footer {
   
   #prev-slide,
   #next-slide {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     background-color: gray;
     color: white;
     font-size: 20px;
@@ -234,7 +234,7 @@ footer {
 
 
 
-    @media only screen and (min-width:1050px) {
+    @media only screen and (min-width:970px) {
 /*die nächste gehört zum Sonderfall*/
 
 .titelcontainer {
@@ -248,12 +248,12 @@ nav li{
     
 }
 
-nav li img {
+.englisch {
     height: 4vh;
     width: auto;}
 
 body{
-font-size: 1.6vw;}
+    font-size: 1.9vw;}
 
     .bild-sonderfall {
             width: 58%;
@@ -307,7 +307,7 @@ margin-left: -180px;
         margin-left: 10%;
         margin-right: 10%;      
     }
-    nav li img {
+    .englisch {
         height: 3.4vh;
         width: auto;
     }
@@ -319,4 +319,3 @@ margin-left: -180px;
 
 
 }
-

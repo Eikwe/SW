@@ -112,6 +112,11 @@ nav a:hover {
         justify-content: space-between;
         align-items: center;        
     }
+    .backgroundcontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+    }
     .bild1, .bild2 {
         padding: 5%; 
         background-color: rgb(223, 200, 185);
@@ -202,6 +207,7 @@ footer {
   #slider figure img {
     width: 14.2857%;
     float: left;
+    
   }
   
   #slider-nav {
@@ -234,7 +240,7 @@ footer {
     background-color: darkgrey;
   }
 
-  
+
 
 
 

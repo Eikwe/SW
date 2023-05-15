@@ -56,7 +56,7 @@ img{ width: 100%;
         text-decoration: none;
         color: black;
     }
-nav a:hover {    
+nav a:hover, .links a:hover {    
  text-decoration: underline;
  background-color: white;
  color: black;
@@ -89,7 +89,7 @@ nav a:hover {
     .newsbutton {
         font-size: 2.5vw ;
         font-weight: bold;
-        padding: 9% 9%;
+        padding: 11% 11%;
         cursor: pointer;
         background-color: #e09c9c;
         color: white;
@@ -114,9 +114,9 @@ nav a:hover {
     }
     .backgroundcontainer {
         display: flex;
+    
         justify-content: center;
-        align-items: center;  
-              
+        align-items: center;        
     }
     .bild1, .bild2 {
         padding: 5%; 
@@ -140,13 +140,13 @@ nav a:hover {
     align-items: center;
 }
 .bildlinks {
-    width: 70%;
-    margin-right: 5%;
+    width: 60%;
+    margin-right: 0.8vw;
 
 }
 .bildrechts {
-    width: 70%;
-    margin-left: 5%;
+    width: 60%;
+    margin-left: 0.8vw;
 
 }
 
@@ -200,7 +200,7 @@ footer {
     width: 700%;
     margin: 0;
     left: 0;
-    animation: slider 20s infinite;
+    animation: slider 50s infinite;
   }
   
   
@@ -208,7 +208,6 @@ footer {
   #slider figure img {
     width: 14.2857%;
     float: left;
-    
   }
   
   #slider-nav {
@@ -225,11 +224,11 @@ footer {
   
   #prev-slide,
   #next-slide {
-    width: 2.5vw;
-    height: 2.5vw;
-    background-color: black;
+    width: 30px;
+    height: 30px;
+    background-color: gray;
     color: white;
-    font-size: 23px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -238,15 +237,15 @@ footer {
   
   #prev-slide:hover,
   #next-slide:hover {
-    background-color: darkgrey;
+    background-color: darkgray;
   }
 
+  
 
 
 
 
- @media only screen and (min-width: 1000px) {
-
+@media only screen and (min-width:1020px) {
 
 .titelcontainer {
     display: flex;
@@ -269,7 +268,7 @@ body{
     .bild-sonderfall {
             width: 50%;
             margin-right: 5%;
-            
+           
         }
     .textbild {
      display: flex;
@@ -328,9 +327,5 @@ margin-left: -180px;
         
     }
 
-    @media only screen and (min-width: 1400px) {
-        body { 
-             font-size:  1.7vw;
-        }
-        
+
 }

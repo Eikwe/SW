@@ -12,6 +12,18 @@
     <link href="style.css" rel="stylesheet">
     <title> Projekte </title>
     <link rel="icon" type="image/png" href="Icon.jpg">
+    <style>
+      /* Definieren Sie die CSS-Klasse für die Animation */
+      .animated-text {
+        animation: appear 2.4s linear forwards;
+      }
+  
+      /* Definieren Sie die Animation */
+      @keyframes appear {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+    </style>
 </head>
 <body>
 
@@ -30,9 +42,13 @@
       <li><a href="eprojects.html"> <img class="englisch" src="englisch.png"></a></li>
     </ul>
   </nav>
- <h2> Unsere Projekte </h2>
+ 
+  <h2>
+    <span class="animated-text">Unsere Projekte</span>
+   
+  </h2>
  <center> <div class="backgroundcontainer">
-  <a href="Solarprojekt.html"  > <button class="newsbutton" style="background-image: url(Solar.jpg); background-size: cover; height: 20vw;"> <I> Solaranlage für die Partnerschule</I></button> </a>
+  <a href="Solarprojekt.html"  style="margin-right: 0.7vw;"> <button class="newsbutton" style="background-image: url(Solar.jpg); background-size: cover; height: 20vw;"> <I> Solaranlage für die Partnerschule</I></button> </a>
   <a href="kunstprojekt.html" > <button class="newsbutton" style="background-image: url(GesamtbildSW.jpg); background-size: cover; height: 20vw; background-position-y: 80%; "> <I> Kunstprojekt "What makes me happy"</I></button> </a>
   </center>
 </div>
@@ -40,7 +56,6 @@
       
 
 
-<br>
 <br>
 <footer> 
     <div class="links"> <a href="kontakt.html"> Kontakt </a> <br>

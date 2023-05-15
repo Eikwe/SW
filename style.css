@@ -115,7 +115,8 @@ nav a:hover {
     .backgroundcontainer {
         display: flex;
         justify-content: center;
-        align-items: center;        
+        align-items: center;  
+              
     }
     .bild1, .bild2 {
         padding: 5%; 

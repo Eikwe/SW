@@ -112,7 +112,8 @@ nav a:hover, .links a:hover {
         display: flex;
         width: 45%;
         justify-content: space-between;
-        align-items: center;        
+        align-items: center;  
+        
     }
 .backgroundcontainer {
     display: flex;
@@ -121,7 +122,7 @@ nav a:hover, .links a:hover {
 }
 .bild1, .bild2 {
     padding: 5%; 
-    background-color: rgb(223, 200, 185);
+    background-color: rgb(223, 200, 185);  
 }
 
 .background {

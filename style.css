@@ -114,16 +114,15 @@ nav a:hover, .links a:hover {
         justify-content: space-between;
         align-items: center;        
     }
-    .backgroundcontainer {
-        display: flex;
-    
-        justify-content: center;
-        align-items: center;        
-    }
-    .bild1, .bild2 {
-        padding: 5%; 
-        background-color: rgb(223, 200, 185);
-    }
+.backgroundcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+}
+.bild1, .bild2 {
+    padding: 5%; 
+    background-color: rgb(223, 200, 185);
+}
 
 .background {
     background-color: #FFDDDD;
@@ -138,13 +137,26 @@ nav a:hover, .links a:hover {
 
 .bildundtext {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+}
+.texto{
+    flex: 0.7;
+    margin: 0 1% 0 1%;
+
+    
 }
 .bildlinks {
     width: 60%;
     margin-right: 0.8vw;
 
+}
+.bilddrei{
+    
+    height: 20vw;
+    width: auto;
+  
 }
 .bildrechts {
     width: 60%;
@@ -211,7 +223,11 @@ footer {
     width: 14.2857%;
     float: left;
   }
-  
+figure img {
+     
+    height: 40vw; 
+    object-fit: cover;
+  }
   #slider-nav {
     position: absolute;
     top: 50%;

@@ -135,18 +135,53 @@ nav a:hover, .links a:hover {
    
 }
 
-.bildundtext {
+.bildundtext  {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  
 }
+.bildundtexta  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+        
+      transform: translateY(0);
+    }
+  }
+  
+  .bildundtexta {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .bildundtexta img {
+    animation: slideIn 0.5s ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: 0s;
+  }
+  
+  .bildundtexta img:nth-child(2) {
+    animation-delay: 0.3s; /* Verzögerung für das zweite Bild */
+  }
+  
+  .bildundtexta img:nth-child(3) {
+    animation-delay: 0.7s; /* Verzögerung für das dritte Bild */
+  }
+  .bildundtexta img:nth-child(4) {
+    animation-delay: 1s; /* Verzögerung für das dritte Bild */
+  }
 
-.bildtextbild {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
+  
+
 .texto{
     flex: 0.7;
     margin: 0 1% 0 1%;

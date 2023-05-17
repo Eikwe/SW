@@ -137,6 +137,12 @@ nav a:hover, .links a:hover {
 
 .bildundtext {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bildtextbild {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;

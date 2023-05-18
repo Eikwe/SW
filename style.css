@@ -91,8 +91,11 @@ nav a:hover, .links a:hover {
         background-color: #e09c9c;
         color: white;
         border-color:  white;
+        opacity: 0.85;
     }
-
+.newsbutton:hover {
+    opacity: 1;
+}
     
     .button:hover {
     background-color: rgb(63, 236, 63) }

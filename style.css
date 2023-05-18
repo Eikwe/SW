@@ -107,7 +107,11 @@ nav a:hover, .links a:hover {
         width: 30%;
         text-align: center; 
     }
- 
+    .container {
+        display: flex;
+       
+        text-align: center; 
+    }
     .zweiercontainer {
         display: flex;
         width: 45%;
@@ -224,7 +228,6 @@ footer {
     width: 40%;
    }
 
-
 .icons {
     display:flex;
     justify-content: space-between;
@@ -300,6 +303,12 @@ figure img {
     background-color: darkgray;
   }
 
+.rechteck {
+    width: 24vw;
+    height: 20vw;
+    background-color:rgb(147, 241, 147);
+   margin: 3%;
+}  
 
 @media only screen and (min-width:990px) {
 
@@ -382,6 +391,9 @@ margin-left: -180px;
         margin: 0 1.8vw 0 0; 
         
     }
-
+    footer img {
+        width: 80%;
+        float: right;
+    }
 
 }

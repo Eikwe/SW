@@ -35,7 +35,7 @@ img{ width: 100%;
         display: none;
         position: absolute;
         background-color:rgb(143, 241, 195);
-        
+        left: 0;
        
     }
 
@@ -45,7 +45,8 @@ img{ width: 100%;
     }
     nav ul li ul li {
         white-space: nowrap;
-        font-size: 1em}
+        font-size: 1em;
+        }
     a {
         text-decoration: none;
         color: black;

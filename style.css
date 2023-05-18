@@ -15,7 +15,7 @@ img{ width: 100%;
     body {
         margin-left: 3%;
         margin-right: 3%;
-        font-size: 2vw;
+        font-size: 2.3vw;
         font-family: Georgia;
     }
     ul{
@@ -323,7 +323,7 @@ figure img {
     width: fit-content;
 }
 nav li{
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin: 0 1.5vw 0 0; 
     display: inline-block;
   
@@ -356,10 +356,11 @@ margin-left: -180px;
 
 
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1110px) {
     body { 
         margin-left: 10%;
-        margin-right: 10%;      
+        margin-right: 10%;   
+        font-size: 2vw;   
     }
     nav li img {
         height: 3.4vh;
@@ -397,5 +398,4 @@ margin-left: -180px;
           nav ul li ul li {
             white-space: nowrap;
             font-size: 4vh}        
-        
-        }
+           }

@@ -400,5 +400,10 @@ margin-left: -180px;
           }
           nav ul li ul li {
             white-space: nowrap;
-            font-size: 4vh}        
+            font-size: 4vh}  
+            
+            .icons img {
+                width: 20vw;
+            }            
+         
            }

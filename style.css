@@ -257,7 +257,7 @@ footer {
     width: 700%;
     margin: 0;
     left: 0;
-    animation: slider 50s infinite;
+    animation: slider 4s infinite;
   }
   
   
@@ -268,7 +268,7 @@ footer {
   }
 figure img {
      
-    height: 43vw; 
+    height: 40vw; 
     object-fit: cover;
   }
   #slider-nav {
@@ -361,8 +361,8 @@ margin-left: -180px;
 
 @media only screen and (min-width: 1010px) {
     body { 
-        margin-left: 10%;
-        margin-right: 10%;   
+        margin-left: 5%;
+        margin-right: 5%;   
         font-size: 2vw;   
     }
     nav li img {
@@ -407,3 +407,10 @@ margin-left: -180px;
             }            
          
            }
+
+           @media only screen and (min-width: 1310px) {
+            body { 
+                margin-left: 10%;
+                margin-right: 10%;   
+                font-size: 2vw;   
+            }}

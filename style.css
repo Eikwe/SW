@@ -230,7 +230,7 @@ footer {
    
 } 
 .icons img {
-    width: 25vw;
+    width: 24vw;
 }
 
 .unsereprojekte {
@@ -314,7 +314,7 @@ figure img {
 
 }
 .titelcontainer h3 {
-    text-align: center;
+    align-items: center;
     float: left;
     font-size: 130%;
 }
@@ -341,9 +341,7 @@ nav li img {
     margin-right: 5%;
 }
   
-.icons img {
-    width: 20vw;
-}      
+
 
 .Spenden {
     padding: 250px;

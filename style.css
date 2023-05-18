@@ -310,22 +310,21 @@ figure img {
    margin: 3%;
 }  
 
-@media only screen and (min-width:970px) {
+@media only screen and (min-width: 1000px ) {
 
 .titelcontainer {
     display: flex;
     justify-content: space-between;
-    align-items: center;        
+    align-items: center; 
+    
+
 }
 nav li{
-    font-size: 4vh;
+    font-size: 2vh;
     margin: 0 0.8vw 0 0; 
-    
+   background-color: red;
+  
 }
-
-nav li img {
-    height: 4vh;
-    width: auto;}
 
 body{
     font-size: 2vw;}
@@ -350,29 +349,18 @@ body{
     width: 20vw;
 }      
 
-  
-
-
 .Spenden {
     padding: 250px;
     
 }    
-
 
 .PositionSpende {
 margin-left: -180px;
 
 }
 
-
-
-  
     nav li {
-     
         margin: 0 1.8vw 0 0;}
-     
-     
-        
     }
   
 
@@ -389,6 +377,7 @@ margin-left: -180px;
     nav li{
         font-size: 4vh;
         margin: 0 1.8vw 0 0; 
+    
         
     }
     footer img {

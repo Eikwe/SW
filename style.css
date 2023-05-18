@@ -14,22 +14,14 @@ img{ width: 100%;
     body {
         margin-left: 3%;
         margin-right: 3%;
-        font-size: 2.5vw;
+ 
         font-family: Georgia;
     }
     ul{
         text-align: center;  
     }
-    nav li{
-        font-size: 2vh;
-        margin: 0 1.8vw 0 0; 
-        display: inline-block;
-        
-    }
-  
-    nav li img {
-        height: 1.7vh;
-        width: auto;}
+ 
+ 
     nav ul li{
         position: relative;
        
@@ -78,16 +70,16 @@ nav a:hover, .links a:hover {
   margin-top: -17%;}
    
     .Button {
-    font-size: 30px;
+    font-size: 2vw;
     font-weight: bold;
-    padding: 2% 7%;
+    padding: 2% 5%;
     cursor: pointer;
     border-radius: 1em;
     margin-left: 30px;
     border-color: green;
     }
     .newsbutton {
-        font-size: 2.5vw;
+        font-size: 2.3vw;
         -webkit-text-stroke: 0.6px rgb(189, 189, 189);
         font-weight: bold;
         width: 39vw ;
@@ -310,35 +302,38 @@ figure img {
    margin: 3%;
 }  
 
-@media only screen and (min-width: 1000px ) {
+
 
 .titelcontainer {
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    
 
+
+}
+.titelcontainer h3 {
+    
+    float: left;
+    font-size: 130%;
+}
+.titelcontainer nav {
+    width: fit-content;
 }
 nav li{
-    font-size: 2vh;
-    margin: 0 0.8vw 0 0; 
-
+    font-size: 1.7em;
+    margin: 0 1.5vw 0 0; 
+    display: inline-block;
   
 }
+nav li img {
+    height: 1em;
+    width: auto;}
 
 body{
     font-size: 2vw;}
 
-    .bild-sonderfall {
-            width: 50%;
-            margin-right: 5%;
-           
-        }
-    .textbild {
-     display: flex;
-    justify-content: space-between; 
-    align-items: center;
-           }
+ 
+
 
 .bildlinks {
     width: 70%;
@@ -359,13 +354,9 @@ margin-left: -180px;
 
 }
 
-    nav li {
-        margin: 0 1.8vw 0 0;}
-    }
-  
 
 
-@media only screen and (min-width: 1110px) {
+@media only screen and (min-width: 1000px) {
     body { 
         margin-left: 10%;
         margin-right: 10%;      
@@ -376,7 +367,8 @@ margin-left: -180px;
     }
     nav li{
         font-size: 4vh;
-        margin: 0 1.8vw 0 0; 
+        margin: 0 2.5vw 0 0; 
+    
     
         
     }
@@ -384,5 +376,20 @@ margin-left: -180px;
         width: 80%;
         float: right;
     }
+    .titelcontainer h3 {
+        font-size: 100%;
+    }
+    .titelcontainer nav {
+        width: max-content;
 
 }
+.bild-sonderfall {
+    width: 50%;
+    margin-right: 5%;
+   
+}
+.textbild {
+    display: flex;
+   justify-content: space-between; 
+   align-items: center;
+          }}

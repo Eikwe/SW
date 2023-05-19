@@ -91,11 +91,9 @@ nav a:hover, .links a:hover {
         background-color: #e09c9c;
         color: white;
         border-color:  white;
-        opacity: 0.8;
+        
     }
-.newsbutton:hover {
-    opacity: 1;
-}
+
     
     .button:hover {
     background-color: rgb(63, 236, 63) }
@@ -403,8 +401,18 @@ margin-left: -180px;
             
             .icons img {
                 width: 20vw;
-            }            
-         
+            }     
+    
+    .newsbutton { opacity: 0.8;}
+     .newsbutton:hover {
+    opacity: 1;
+}    
+    
+    
+    
+    
+    
+    
            }
 
            @media only screen and (min-width: 1310px) {

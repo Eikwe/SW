@@ -134,8 +134,13 @@ textarea, input {
     .containerteil {
         display: block;
         padding-left: 2vw;
-       
-    }
+        line-height: 3vw;
+      }
+      
+      .containerteil a:not(:first-child) {
+        text-decoration: underline;
+      }
+      
 .backgroundcontainer {
     display: flex;
     justify-content: center;

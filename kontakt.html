@@ -5,6 +5,12 @@
 
   gtag('config', 'G-GE34BCJEDH');
 </script> 
+<style>
+  form input, form textarea{
+    height: 5vw;
+    width: auto;
+  }
+</style>
 
 <head>
     <link href="style.css" rel="stylesheet">
@@ -35,26 +41,28 @@
    </div>
  
 <h2> Kontakt </h2>
-
-
-<br>
+<center> 
 <form
   action="https://formspree.io/f/xlekydbr"
   method="POST">
-<label for="email">E-Mail:</label>
-<input type="email" id="email" required placeholder="deine E-Mailadresse">
+
+
+  <input type="email" name="email" placeholder="deine E-Mailadresse" required>
 <br>
-<label> Your message: </label>
+<br>
+  <input type="text" name="name" placeholder="dein Name (optional)">
+<br>
+<br>
+
 <textarea name="message" placeholder="deine Nachricht..." ></textarea>
  
 <br>
-  <label for="name">Name: (optional)</label>
-  <input type="text" id="name" placeholder="type in your name...">
-  <!-- your other form fields go here -->
   <button type="submit">Send</button>
 </form>
+</center>
 <footer > 
   <div class="links"> <a  href="kontakt.html"> Kontakt </a> <br>
   <a  href="Impressum.html">Impressum</a></div>
   <a href="index.html"> <img src="LogoRathenau.jpg">
     </footer>
+

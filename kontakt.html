@@ -6,10 +6,19 @@
   gtag('config', 'G-GE34BCJEDH');
 </script> 
 <style>
-  form input, form textarea{
-    height: 5vw;
-    width: auto;
+  form input{
+    height: 3vw;
+    width: 100%;
   }
+  form textarea{
+    height: 5vw;
+    width: 100%;
+  }
+  label {
+    font-size: 70%;
+    float: left;
+  }
+
 </style>
 
 <head>
@@ -46,20 +55,23 @@
   action="https://formspree.io/f/xlekydbr"
   method="POST">
 
-
+  <label>E-Mailadresse: </label>
   <input type="email" name="email" placeholder="deine E-Mailadresse" required>
 <br>
 <br>
+  <label> Name: </label>
   <input type="text" name="name" placeholder="dein Name (optional)">
 <br>
 <br>
-
+<label>Nachricht: </label>
 <textarea name="message" placeholder="deine Nachricht..." ></textarea>
  
 <br>
   <button type="submit">Send</button>
 </form>
 </center>
+
+
 <footer > 
   <div class="links"> <a  href="kontakt.html"> Kontakt </a> <br>
   <a  href="Impressum.html">Impressum</a></div>

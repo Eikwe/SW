@@ -48,7 +48,28 @@ nav a:hover, .links a:hover {
     color: white;
     font-size: 2.5vw;
 }
+form input{
+    height: 3vw;
+    width: 100%;
+  }
+  form textarea{
+    height: 5vw;
+    width: 100%;
+  }
+  label {
+    font-size: 70%;
+    float: left;
+  }
+.kontakt-button {
+    font-size: 2vw;
+    font-weight: bold;
+    padding: 1vw 2vw;
+   
     
+}   
+.kontakt-button:hover{
+    background-color:rgb(147, 241, 147);
+}
     
 .icons a:hover {
  transform: scale(125%);}

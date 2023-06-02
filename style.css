@@ -1,64 +1,58 @@
 img{ width: 100%;
     height: auto;} 
     
-    h1, h2 {    
-        text-align: center;
-        margin-top: -0.2%;
-    }
-
-    ul {   
-        box-shadow: 0px 2px 6px;
-        background-color: #bdecb6; 
-        
-    }
-    
-    body {
-        margin-left: 3%;
-        margin-right: 3%;
-        font-size: 2.3vw;
-        font-family: Georgia;
-    }
-    ul{
-        text-align: center;  
-    }
+h1, h2 {    
+    text-align: center;
+    margin-top: -0.2%;
+}
  
- 
-    nav ul li{
-        position: relative;
-       
+body {
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 2.1vw;
+    font-family: Georgia;
     }
-    nav ul li a {
-        display: block;  
-    }
-   
-    nav ul li ul{
-        display: none;
-        position: absolute;
-        background-color:rgb(143, 241, 195);
-        left: 0;
-       
-    }
-
-    nav ul li:hover ul {
-        display: block;
-        z-index: 1;
-    }
-    nav ul li ul li {
-        white-space: nowrap;
-        font-size: 1em;
-        }
-    a {
-        text-decoration: none;
-        color: black;
+ul {   
+    box-shadow: 0px 2px 6px;
+    background-color: #bdecb6;  
+}
+nav ul li{
+    position: relative;   
+}
+nav ul li a {
+    display: block;  
+}
+nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color:rgb(143, 241, 195);   
+}
+nav ul li:hover ul {
+    display: block;
+    z-index: 1;
+}
+nav ul li ul li {
+    white-space: nowrap;
+    font-size: 1em;
+}
+a {
+    text-decoration: none;
+    color: black;
     }
 nav a:hover, .links a:hover {    
  text-decoration: underline;
  background-color: white;
  color: black;
     }
-
+.icons a {
+    color: white;
+    font-size: 2.5vw;
+}
+    
+    
 .icons a:hover {
  transform: scale(125%);}
+
 .backgroundblue {
     background-color:rgb(105, 202, 226);
 }
@@ -91,9 +85,11 @@ nav a:hover, .links a:hover {
         background-color: #e09c9c;
         color: white;
         border-color:  white;
-        
+        opacity: 0.8;
     }
-
+.newsbutton:hover {
+    opacity: 1;
+}
     
     .button:hover {
     background-color: rgb(63, 236, 63) }
@@ -171,14 +167,14 @@ nav a:hover, .links a:hover {
   }
   
   .bildundtexta img:nth-child(2) {
-    animation-delay: 0.3s; /* Verzögerung für das zweite Bild */
+    animation-delay: 0.3s; 
   }
   
   .bildundtexta img:nth-child(3) {
-    animation-delay: 0.7s; /* Verzögerung für das dritte Bild */
+    animation-delay: 0.7s; 
   }
   .bildundtexta img:nth-child(4) {
-    animation-delay: 1s; /* Verzögerung für das dritte Bild */
+    animation-delay: 1s; 
   }
 
   
@@ -221,7 +217,7 @@ footer {
     }
 
    footer a {
-    width: 40%;
+    width: 35vw;
    }
 
 .icons {
@@ -232,16 +228,11 @@ footer {
    
 } 
 .icons img {
-    width: 24vw;
+    width: 20vw;
 }
 
 .unsereprojekte {
     background-color: rgb(105, 202, 226);
-}
-
-.icons a {
-    color: white;
-    font-size: 2.5vw;
 }
 
 
@@ -320,12 +311,10 @@ figure img {
     float: left;
     font-size: 130%;
 }
-.titelcontainer nav {
-    width: fit-content;
-}
+
 nav li{
     font-size: 1.3em;
-    margin: 0 1.5vw 0 0; 
+    margin: 0 1.3vw 0 0; 
     display: inline-block;
   
 }
@@ -333,11 +322,6 @@ nav li img {
     height: 1em;
     width: auto;
     align-items: center;}
-
-
- 
-
-
 .bildlinks {
     width: 70%;
     margin-right: 5%;
@@ -350,41 +334,23 @@ nav li img {
     
 }    
 
-.PositionSpende {
-margin-left: -180px;
-
+nav ul li a:first-child {
+    margin-left: 0.5 vw;
 }
-
 
 
 @media only screen and (min-width: 1010px) {
-    body { 
-    
-        font-size: 2vw;   
-    }
+
     nav li img {
-        height: 3.4vh;
-        width: auto;
-        text-align: center;
-    }
+        height: 3.4vh;}
+        
     nav li{
         font-size: 4vh;
-        margin: 0 2.5vw 0 0; 
-    
-    
-        
+        margin: 0 2vw 0 0; 
     }
-    footer img {
-        width: 80%;
-        float: right;
-    }
-    .titelcontainer h3 {
-        font-size: 100%;
-    }
-    .titelcontainer nav {
-        width: max-content;
+   
+   
 
-}
 .bild-sonderfall {
     width: 50%;
     margin-right: 5%;
@@ -396,28 +362,13 @@ margin-left: -180px;
    align-items: center;
           }
           nav ul li ul li {
-            white-space: nowrap;
             font-size: 4vh}  
             
-            .icons img {
-                width: 20vw;
-            }     
-    
-    .newsbutton { opacity: 0.8;}
-     .newsbutton:hover {
-    opacity: 1;
-}    
-    
-    
-    
-    
-    
-    
            }
 
-           @media only screen and (min-width: 1310px) {
-            body { 
-                margin-left: 10%;
-                margin-right: 10%;   
-                font-size: 2vw;   
+@media only screen and (min-width: 1310px) {
+    body { 
+    margin-left: 10%;
+    margin-right: 10%;   
+                
             }}

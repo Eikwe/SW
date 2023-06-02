@@ -81,13 +81,10 @@ form input{
    background-image: url("Titelbild.jpg");
    background-size: cover;
    background-position: top;
-   padding: 170px;}    
-.textposition {
-  text-align: left;
-  margin-left: -15%;
-  margin-top: -17%;}
-   
-    .Button {
+   padding: 4vw;
+    padding-left: 6vw;}    
+
+ .Button {
     font-size: 2vw;
     font-weight: bold;
     padding: 2% 5%;
@@ -124,8 +121,8 @@ textarea, input {
     }
     .container {
         display: flex;
+        
        
-        text-align: center; 
     }
     .zweiercontainer {
         display: flex;
@@ -133,6 +130,11 @@ textarea, input {
         justify-content: space-between;
         align-items: center;  
         
+    }
+    .containerteil {
+        display: block;
+        padding-left: 2vw;
+       
     }
 .backgroundcontainer {
     display: flex;
@@ -161,12 +163,7 @@ textarea, input {
     align-items: center;
   
 }
-.bildundtexta  {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
-}
+
 @keyframes slideIn {
     0% {
         opacity: 0;
@@ -242,7 +239,8 @@ footer {
    footer a {
     width: 35vw;
    }
-
+  .einführungsbild {
+    height: 32vw; width: auto;}
 .icons {
     display:flex;
     justify-content: space-between;
@@ -351,11 +349,7 @@ nav li img {
 }
   
 
-
-.Spenden {
-    padding: 250px;
-    
-}    
+  
 
 nav ul li a:first-child {
     margin-left: 0.5 vw;

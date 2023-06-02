@@ -12,8 +12,16 @@
     <link href="style.css" rel="stylesheet">
     <title> Solarprojekt </title>
     <link rel="icon" type="image/png" href="Icon.jpg">
+    <style>
+    body {
+      height: 100%;
+      scroll-behavior: smooth;
+    } 
+   
+    
+    </style>
 </head>
-<body>
+
 </head>
 <body> 
   <div class="titelcontainer"  > 
@@ -35,13 +43,50 @@
    </ul>
    </nav>
    </div>
-  
-       <center><img src="Solar.jpg" style="height: 32vw; width: auto; "><br> <br> </center>
-             <h2> <b> Bau einer Solaranlage für die Partnerschule </b> </h2> 
-            Solarprojekt der 11.Klassen
-        
-         
-        
+<div class="bildundtext">
+  <img src="Solar.jpg" style="width: 60%;"> 
+  <div class="containerteil">
+  Erfahre mehr über: <br>
+  <a href="#gründe"> - die Gründe für das Projekt</a> <br>
+  <a href="#nabig"> - Unseren Unterstützer "naBiG"</a> <br>
+  <a href="#finanzierung">- die Finanzierung des Projekts</a> <br>
+  <a href="#spenden"> - die Spendenmöglichkeiten</a></div> 
+  </div> <br id="gründe"><h2 > <b> Bau einer Solaranlage für die Partnerschule </b> </h2>   Solarprojekt der 11.Klassen
+            <!--<script>
+              // JavaScript-Code für den Scroll-Effekt
+             
+              const finanzierungLink = document.querySelector('a[href="#finanzierung"]');
+              
+              finanzierungLink.addEventListener('click', function(event) {
+                event.preventDefault(); // Verhindert das Standardverhalten des Links
+          
+                const finanzierungElement = document.getElementById('finanzierung');
+                finanzierungElement.scrollIntoView({ behavior: 'smooth' });
+              });
+              const spendenLink = document.querySelector('a[href="#spenden"]');
+              
+              spendenLink.addEventListener('click', function(event) {
+                event.preventDefault(); // Verhindert das Standardverhalten des Links
+          
+                const spendenElement = document.getElementById('spenden');
+                spendenElement.scrollIntoView({ behavior: 'smooth' });
+              });
+            </script> -->
+            <script> function scrollFunction(targetId) {
+              const link = document.querySelector(`a[href="#${targetId}"]`);
+              
+              link.addEventListener('click', function(event) {
+                event.preventDefault();
+                
+                const element = document.getElementById(targetId);
+                element.scrollIntoView({ behavior: 'smooth' });
+              });
+            }
+            scrollFunktion('gründe')
+            scrollFunction('nabig');
+            scrollFunction('finanzierung');
+            scrollFunction('spenden');
+            </script>
         <br> 
         Mit unserer Partnerschule in Ghana, der St. Luke Berufsschule, möchten wir eine Solaranlage für diese Schule errichten.
         <br> Unser Projekt verbessert: <br>
@@ -52,10 +97,10 @@
         <div class="rechteck"> 1. autarke Stromversorgung <br> Durch die Solaranlage kann </div>
         <div class="rechteck"> 2. Energiewende </div>
         <div class="rechteck"> 3. praktische Erfahrungen </div></div> --> 
-<br>
+<br id="nabig"><h2> Der Verein naBiG </h2>
 <div class="bildundtext" style="background-color: rgb(243, 243, 197);"> 
 <img class="bildlinks" src="Logo.jpg" style="width: 15vw; height: auto;"> Um das Projekt zu verwirklichen, arbeiten wir mit dem gemeinnützigen Verein naBiG e.V. (Nachhaltiges Bauen in Ghana e.V) zusammen. Der gemeinnützige Verein hat aufgrund der dorttätigen Ingenieure, wie David Bittner, bereits Erfahrung im Bau einer Solaranlage. </div>
-<h2> Der Verein naBiG </h2>
+<br>
 
 <div class="bildundtext">
     <img class="bildlinks" src="naBiG-Infos.jpg"> 
@@ -65,22 +110,22 @@
     <p style="font-size: 90%"> Zudem schulen sie junge Erwachsene, um diesen Themen rund um nachhaltiges Bauen zu vermitteln. Hierbei wird großen Wert auf die notwendige Theorie, aber vor allem auf die praktische Anwendung des Gelernten gelegt.</p>
     <img class="bildrechts" src="naBiG-Infos2.jpg">
 </div>
-<br>
-
+<br  id="finanzierung">
+<div>
 <h2> Finanzierung des Projekts </h2>
     Im November stellten wir unser Projekt bei einer Schulveranstalung vor. Aufgrund des großen Interesses der Eltern, konnten wir zahlreiche Spenden sammeln, indem wir Flyer verteilten und selbst verzierte Schokolade verkauften. 
     In den nächsten Monaten wollen wir noch die letzten fehlenden Spendengelder sammeln. <br> <br>
     <center><a href="Flyer.pdf" target="_blank"> <button class="Button"> Zum Flyer </button> </a>   </center>
-
-<br>   
+</div>
+<br id="spenden">   
 <div class="Spenden">
     <h3 class="textposition">
     <font color="white">  Sie wollen unser Projekt unterstützen? </font><br> </h3>
     <a href="https://www.nabig.de/helfen/"target="_blank"> <button class="Button"> Spenden  </button>  </a>
     <br> 
-    <p style="margin-left: -140px"> <font color="white"> oder: <br> <u> <b> Konto </b><br> </u> Nachhaltiges Bauen in Ghana e.V  <br> IBAN: DE98 8306 5408 0004 1540 53 <br>
+    <p> <font color="white"> oder: <br> <u> <b> Konto </b><br> </u> Nachhaltiges Bauen in Ghana e.V  <br> IBAN: DE98 8306 5408 0004 1540 53 <br>
     BIC: GENODEF1SLR <br> Bank: VR-Bank Altenburger Land <br> <b> <br> !!! Verwendungszweck: Schulprojekt-Ghana-WRS-SW</b> </font> </p>
-</div>
+</div> 
 
 
 <hr>

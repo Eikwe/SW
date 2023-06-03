@@ -23,31 +23,12 @@
   <a href="#finanzierung">-  Finanzierung </a> <br>
   <a href="#spenden"> - Spenden</a></div> </div>
   
-            <!--<script>
-              // JavaScript-Code für den Scroll-Effekt
-             
-              const finanzierungLink = document.querySelector('a[href="#finanzierung"]');
+
+      <script> function scrollFunction(targetId) {
+      const link = document.querySelector(`a[href="#${targetId}"]`);
               
-              finanzierungLink.addEventListener('click', function(event) {
-                event.preventDefault(); // Verhindert das Standardverhalten des Links
-          
-                const finanzierungElement = document.getElementById('finanzierung');
-                finanzierungElement.scrollIntoView({ behavior: 'smooth' });
-              });
-              const spendenLink = document.querySelector('a[href="#spenden"]');
-              
-              spendenLink.addEventListener('click', function(event) {
-                event.preventDefault(); // Verhindert das Standardverhalten des Links
-          
-                const spendenElement = document.getElementById('spenden');
-                spendenElement.scrollIntoView({ behavior: 'smooth' });
-              });
-            </script> -->
-            <script> function scrollFunction(targetId) {
-              const link = document.querySelector(`a[href="#${targetId}"]`);
-              
-              link.addEventListener('click', function(event) {
-                event.preventDefault();
+      link.addEventListener('click', function(event) {
+      event.preventDefault();
                 
                 const element = document.getElementById(targetId);
                 element.scrollIntoView({ behavior: 'smooth' });
@@ -68,22 +49,22 @@
         <div class="rechteck"> 1. autarke Stromversorgung <br> Durch die Solaranlage kann </div>
         <div class="rechteck"> 2. Energiewende </div>
         <div class="rechteck"> 3. praktische Erfahrungen </div></div> --> 
-<br id="nabig"><h2> Der Verein naBiG </h2>
+<br id="nabig"><h3> Der Verein naBiG </h3>
 <div class="container" style="background-color: rgb(243, 243, 197);"> 
-<img class="bildlinks" src="Logo.jpg" style="width: 15vw; height: auto;"> Um das Projekt zu verwirklichen, arbeiten wir mit dem gemeinnützigen Verein naBiG e.V. (Nachhaltiges Bauen in Ghana e.V) zusammen. Der gemeinnützige Verein hat aufgrund der dorttätigen Ingenieure, wie David Bittner, bereits Erfahrung im Bau einer Solaranlage. </div>
+<img  src="Logo.jpg" style="width: 15vw; height: auto;"> Um das Projekt zu verwirklichen, arbeiten wir mit dem gemeinnützigen Verein naBiG e.V. (Nachhaltiges Bauen in Ghana e.V) zusammen. Der gemeinnützige Verein hat aufgrund der dorttätigen Ingenieure, wie David Bittner, bereits Erfahrung im Bau einer Solaranlage. </div>
 <br>
 
-<div class="container">
-    <img class="bildlinks" src="naBiG-Infos.jpg"> 
+<div class="container-zweielemente">
+    <img src="naBiG-Infos.jpg"> 
     <p style="font-size: 90%;" > naBig entwickelt Lösungen für nachhaltige Bauweisen in Ghana. Dabei beschäftigen sie sich vor allem mit nachhaltigen Ziegelsteinen.</p> </div> <br>
     
-<div class="container"> 
+<div class="container-zweielemente"> 
     <p style="font-size: 90%"> Zudem schulen sie junge Erwachsene, um diesen Themen rund um nachhaltiges Bauen zu vermitteln. Hierbei wird großen Wert auf die notwendige Theorie, aber vor allem auf die praktische Anwendung des Gelernten gelegt.</p>
-    <img class="bildrechts" src="naBiG-Infos2.jpg">
+    <img src="naBiG-Infos2.jpg">
 </div>
 <br  id="finanzierung">
 
-<h2> Finanzierung des Projekts </h2>
+<h3> Finanzierung des Projekts </h3>
     Im November stellten wir unser Projekt bei einer Schulveranstalung vor. Aufgrund des großen Interesses der Eltern, konnten wir zahlreiche Spenden sammeln, indem wir Flyer verteilten und selbst verzierte Schokolade verkauften. 
     <br> <br>
     <center><a href="Flyer.pdf" target="_blank"> <button> Zum Flyer </button> </a>   </center>

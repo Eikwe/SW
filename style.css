@@ -10,8 +10,7 @@ h1, h2 {
 }
  
 body {
-    margin-left: 3%;
-    margin-right: 3%;
+    margin: 0 3%;
     font-size: 2.1vw;
     font-family: Georgia;
     }
@@ -116,6 +115,7 @@ textarea, input {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1vw;
     
+    
 }
    
     .container{
@@ -123,16 +123,22 @@ textarea, input {
         justify-content: space-evenly;
         align-items: center;  
     }
-  
-    .container a:first-child{
-        padding-right: 0.5vw;
+    .container-zweielemente{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5vw;
+        align-items: center;
     }
-    .zweiercontainer {
-        display: flex;
-        width: 45%;
-        justify-content: space-between;
-        align-items: center;  
-        
+    .container:first-child{
+        margin-right: 1vw;
+    }
+    .container-zweielemente-hintergrund{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5vw;
+        background-color: rgb(223, 200, 185);  
+        padding: 3%;
+        text-align: center;
     }
     .containerteil {
         display: block;
@@ -145,10 +151,7 @@ textarea, input {
       }
       
 
-.bild1, .bild2 {
-    padding: 5%; 
-    background-color: rgb(223, 200, 185);  
-}
+
 
 .background {
     background-color: #FFDDDD;
@@ -157,7 +160,7 @@ textarea, input {
 }
 .backgroundgreen {
     background-color: #afe0c9;
-    padding: 3%;
+   
    
 }
 
@@ -208,6 +211,10 @@ textarea, input {
     width: 60%;
     margin-right: 0.8vw;
 
+}
+.bildlinks {
+    width: 70%;
+    margin-right: 5%;
 }
 .bilddrei{
     
@@ -345,10 +352,7 @@ nav li img {
     width: auto;
     align-items: center;}
 
-.bildlinks {
-    width: 70%;
-    margin-right: 5%;
-}
+
 
 .siebzigprozentgröße {
     width: 70%;

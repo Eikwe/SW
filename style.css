@@ -1,9 +1,9 @@
 img{ width: 100%;
     height: auto;} 
     
-h1, h2 {    
+h1, h2, h3 {    
     text-align: center;
-    margin-top: -0.2%;
+    
 }
  
 body {
@@ -39,7 +39,7 @@ a {
     text-decoration: none;
     color: black;
     }
-nav a:hover, .links a:hover {    
+nav a:hover, footer div a:hover {    
  text-decoration: underline;
  background-color: white;
  color: black;
@@ -84,23 +84,17 @@ form input{
    padding: 4vw;
     padding-left: 6vw;}    
 
- .Button {
-    font-size: 2vw;
+ button {
+    font-size: 1.8vw;
     font-weight: bold;
     padding: 2% 5%;
-    cursor: pointer;
     border-radius: 1em;
-    margin-left: 30px;
     border-color: green;
     }
     .newsbutton {
         font-size: 2.3vw;
-        -webkit-text-stroke: 0.6px rgb(189, 189, 189);
-        font-weight: bold;
-        width: 39vw ;
-        height: 20vw;;
-        cursor: pointer;
-        background-color: #e09c9c;
+        width: 40vw ;
+        height: 20vw;
         color: white;
         border-color:  white;
         opacity: 0.8;
@@ -109,7 +103,7 @@ form input{
     opacity: 1;
 }
     
-    .button:hover {
+    button:hover {
     background-color: rgb(63, 236, 63) }
 textarea, input {
     font-size: 0.5em;
@@ -119,10 +113,14 @@ textarea, input {
         width: 30%;
         text-align: center; 
     }
-    .container {
+    .container{
         display: flex;
-        
-       
+        justify-content: space-between;
+        align-items: center;  
+    }
+    
+    .container a:first-child{
+        padding-right: 1vw;
     }
     .zweiercontainer {
         display: flex;
@@ -133,19 +131,15 @@ textarea, input {
     }
     .containerteil {
         display: block;
-        padding-left: 2vw;
         line-height: 3vw;
+        
       }
       
       .containerteil a:not(:first-child) {
         text-decoration: underline;
       }
       
-.backgroundcontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;        
-}
+
 .bild1, .bild2 {
     padding: 5%; 
     background-color: rgb(223, 200, 185);  
@@ -162,12 +156,7 @@ textarea, input {
    
 }
 
-.bildundtext  {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
-}
+
 
 @keyframes slideIn {
     0% {
@@ -226,26 +215,31 @@ textarea, input {
     margin-left: 0.8vw;
 
 }
-
-
+footer div {
+   
+    display: block;
+    margin: 3% 0 0 2%;
+}
+footer a {
+    color: white;
+}
+footer img {
+    height: 12vw;
+   }
 footer {
     background-color:rgb(78, 40, 40);
     display: flex;
     justify-content: space-between;
+    
 }
-    .links a {
-        color: white;
-        font-size: 130%;
-    }
-    .links {
-        margin: 3% 0 0 2%;
-    }
 
-   footer a {
-    width: 35vw;
-   }
+
+
+  
   .einführungsbild {
-    height: 32vw; width: auto;}
+    height: 40vw; 
+    object-fit: cover;
+}
 .icons {
     display:flex;
     justify-content: space-between;
@@ -257,9 +251,6 @@ footer {
     width: 20vw;
 }
 
-.unsereprojekte {
-    background-color: rgb(105, 202, 226);
-}
 
 
 #slider {
@@ -348,6 +339,7 @@ nav li img {
     height: 1em;
     width: auto;
     align-items: center;}
+
 .bildlinks {
     width: 70%;
     margin-right: 5%;
@@ -356,19 +348,27 @@ nav li img {
 
   
 
-nav ul li a:first-child {
-    margin-left: 0.5 vw;
+
+.siebzigprozentgröße {
+    width: 70%;
+    
 }
-
-
+/*Animation Text */
+.animated-text {
+    animation: appear 2s linear forwards;
+  }
+  @keyframes appear {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 @media only screen and (min-width: 1010px) {
 
     nav li img {
         height: 3.4vh;}
         
-    nav li{
+    nav li , footer a{
         font-size: 4vh;
-        margin: 0 2vw 0 0; 
+        
     }
    
    

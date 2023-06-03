@@ -66,3 +66,19 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+
+//Animation Scroll
+function scrollFunction(targetId) {
+  const link = document.querySelector(`a[href="#${targetId}"]`);
+          
+  link.addEventListener('click', function(event) {
+  event.preventDefault();
+            
+            const element = document.getElementById(targetId);
+            element.scrollIntoView({ behavior: 'smooth' });
+          });
+        }
+        scrollFunktion('gründe')
+        scrollFunction('nabig');
+        scrollFunction('finanzierung');
+        scrollFunction('spenden');

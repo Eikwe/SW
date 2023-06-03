@@ -1,6 +1,7 @@
 function loadNavigation() {
-  // Navigations-HTML-Code
   const navigationHTML = `
+  <link href="style.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="Icon.jpg">
     <div class="titelcontainer"> 
       <h3> Eikwe-Schweinfurt</h3>
       <nav>
@@ -20,27 +21,34 @@ function loadNavigation() {
             </ul>
           </li>
           <li><a href="Partnerschaft.html"> Partnerschaft </a></li> 
-          <li><a href="englisch.html"> <img class="englisch" src="englisch.png"></a></li>
+          <li><a href="${getLanguageLink()}"> <img class="englisch" src="englisch.png"></a></li>
         </ul>
       </nav>
     </div>
   `;
 
-  // Element mit der ID "navigation" in der index.html suchen
   const navigationContainer = document.getElementById("navigation");
-
-  // Navigations-HTML-Code in das Element einfügen
   navigationContainer.innerHTML = navigationHTML;
 }
 
-// Funktion aufrufen, um die Navigationsleiste zu laden, wenn das DOM geladen ist
-document.addEventListener("DOMContentLoaded", loadNavigation);
+function getLanguageLink() {
+  const currentPage = window.location.pathname;
 
+  if (currentPage.includes("projekte.html")) {
+    return "projects.html";
+  } else {
+    return "englisch.html";
+  }
+}
+
+document.addEventListener("DOMContentLoaded", loadNavigation);
 
 function loadENavigation() {
   // Navigations-HTML-Code
   const EnavigationHTML = `
-  
+    
+<link href="style.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="Icon.jpg">
   <div class="titelcontainer"  > 
   <h3> Eikwe-Schweinfurt</h3> 
   <nav>

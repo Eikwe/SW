@@ -10,7 +10,7 @@ function loadNavigation() {
       gtag('config', 'G-GE34BCJEDH');
     </script>
     <link href="style.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="Icon.jpg">
+    <link rel="icon" type="image/png" href="Solar-IconD.png">
     
     <div class="titelcontainer"> 
       <h3> Eikwe-Schweinfurt</h3>
@@ -53,7 +53,7 @@ function loadENavigation() {
       gtag('config', 'G-GE34BCJEDH');
     </script>
     <link href="style.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="Icon.jpg">
+    <link rel="icon" type="image/png" href="Solar-IconD.png">
     
     <div class="titelcontainer">
       <h3> Eikwe-Schweinfurt</h3>
@@ -69,7 +69,9 @@ function loadENavigation() {
           <li><a href="eaktuell.html">currently</a>
             <ul>
               <li><a href="ekabelsammlung.html">cable collection</a></li>
+              <li><a href="ekompakt.html"> information cable </a></li>
               <li><a href="eexhibition.html">exhibition</a></li>
+              
             </ul>
           </li>
           <li><a href="ePartnerschaft.html">partnership</a></li> 

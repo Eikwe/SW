@@ -5,6 +5,9 @@ h1, h2, h3 {
     text-align: center;
     
 }
+h1, h2 {
+    margin-top: -1vw;
+}
  
 body {
     margin-left: 3%;
@@ -93,7 +96,7 @@ form input{
     }
     .newsbutton {
         font-size: 2.3vw;
-        width: 40vw ;
+        width:39vw;
         height: 20vw;
         color: white;
         border-color:  white;
@@ -108,19 +111,21 @@ form input{
 textarea, input {
     font-size: 0.5em;
 }
-    .containerdrei {
-        display: flex;
-        width: 30%;
-        text-align: center; 
-    }
+.containerdrei {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1vw;
+    
+}
+   
     .container{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;  
     }
-    
+  
     .container a:first-child{
-        padding-right: 1vw;
+        padding-right: 0.5vw;
     }
     .zweiercontainer {
         display: flex;
@@ -344,10 +349,6 @@ nav li img {
     width: 70%;
     margin-right: 5%;
 }
-  
-
-  
-
 
 .siebzigprozentgröße {
     width: 70%;

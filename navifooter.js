@@ -115,3 +115,19 @@ function loadfooter() {
 }
 
 document.addEventListener("DOMContentLoaded", loadfooter);
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+    document.getElementById("popup").classList.add("show");
+  }, 30000);
+
+  document.querySelector(".close").addEventListener("click", function() {
+    document.getElementById("popup").style.display = "none";
+  });
+  document.querySelector(".close-button").addEventListener("click", function() {
+    document.getElementById("popup").style.display = "none";
+  });
+});

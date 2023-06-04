@@ -12,9 +12,9 @@ h1, h2 {
 body {
     margin: 0 3%;
     font-size: 2.1vw;
-    font-family: Georgia;
+    font-family: sans-serif;
     scroll-behavior: smooth; /* für Animation*/
- 
+    
     }
     
 ul {   
@@ -126,15 +126,14 @@ textarea, input {
         justify-content: space-evenly;
         align-items: center;  
     }
+   
     .container-zweielemente{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1.5vw;
         align-items: center;
     }
-    .container:first-child{
-        margin-right: 1vw;
-    }
+    
     .container-zweielemente-hintergrund{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -320,13 +319,35 @@ figure img {
   }
 
 .rechteck {
-    width: 24vw;
-    height: 20vw;
-    background-color:rgb(147, 241, 147);
-   margin: 3%;
-}  
+    width: 40vw;
+    height: 50vw;
+    box-shadow: 0px 2px 6px rgb(48, 47, 47);
+    border-radius: 1em;
+    text-align: center;
+    font-size: 3vw;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+    color: #666;
+ 
+    
+  }
+    
+.rechteck h4{
+    font-size: 3vw;
+    margin-top: 1vw;
+    color: black;
+    margin-bottom: 0.5vw;
+}
 
-
+.rechteck img {
+    border-radius: 10px 10px 0 0;
+    padding-top: 1.5vw;
+    align-items: center;
+    height: 20vw; 
+    width:  38vw;
+    object-fit: cover;
+}
 
 .titelcontainer {
     display: flex;
@@ -366,7 +387,7 @@ nav li img {
     0% { opacity: 0; }
     100% { opacity: 1; }
   }
-@media only screen and (min-width: 1010px) {
+@media only screen and (min-width: 1000px) {
 
     nav li img {
         height: 3.4vh;}
@@ -376,7 +397,40 @@ nav li img {
         
     }
    
-   
+    .rechteck {
+        width: 20vw;
+        height: 27vw;
+        box-shadow: 0px 2px 6px rgb(48, 47, 47);
+        border-radius: 1em;
+        text-align: center;
+        font-size: 1.5vw;
+        padding-left: 2%;
+        padding-right: 2%;
+        color: #666;
+        transition: transform 0.3s ease;
+     
+       
+    }  
+    .rechteck h4{
+        font-size: 2vw;
+        margin-top: 1vw;
+        color: black;
+        margin-bottom: 0.5vw;
+        
+    }
+    
+    .rechteck img {
+        border-radius: 10px 10px 0 0;
+        padding-top: 1.5vw;
+        align-items: center;
+        height: 10vw; 
+        width: 18vw;
+        object-fit: cover;
+
+    }
+    .rechteck:hover {
+        transform: translateY(-1vw);
+    }
 
 .bild-sonderfall {
     width: 50%;

@@ -118,6 +118,23 @@ document.addEventListener("DOMContentLoaded", loadfooter);
 
 
 
+function loadfenster() {
+  document.getElementById("fenster").innerHTML = `
+  <div id="popup" class="popup">
+  <div class="popup-content">
+  <span class="close">&times;</span>
+  <h3> Sie haben Fragen zu unseren Projekten? </h3>
+    Gerne, können sie uns, das P-Seminar, über das Kontaktformular erreichen. <br> <br>
+    <div class="container"> <button class="button-eckig"><a href="kontakt.html">Zum Kontaktformular</a></button>
+    <button class="button-eckig"><span class="close-button" > Nicht jetzt</span></button></div>
+    </div>
+    </div>
+
+  `;
+}
+
+document.addEventListener("DOMContentLoaded", loadfenster);
+
 
 document.addEventListener("DOMContentLoaded", function() {
   setTimeout(function() {

@@ -130,7 +130,12 @@ textarea, input {
         justify-content: space-evenly;
         align-items: center;  
     }
-   
+    .container-allgemein{
+      display: flex;
+      
+      align-items: center;  
+  }
+ 
     .container-zweielemente{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -148,8 +153,9 @@ textarea, input {
     }
     .containerteil {
         display: block;
-        line-height: 3vw;
-        
+        line-height: 4vw;
+        padding-left: 5vw;
+        font-size: 3vw;
       }
       
       .containerteil a:not(:first-child) {
@@ -365,7 +371,7 @@ figure img {
 .titelcontainer h3 {
     align-items: center;
     float: left;
-    font-size: 130%;
+    font-size: 120%;
 }
 
 nav li{
@@ -422,7 +428,7 @@ nav li img {
     position: absolute;
     top: 1vw;
     right: 1vw;
-    font-size: 2vw;
+    font-size: 6vw;
     font-weight: bold;
     
   }
@@ -490,6 +496,9 @@ nav li img {
     align-items: center;  
     font-size: 90%;
 }
+.containerteil {
+  font-size: 2vw;
+}
 
           nav ul li ul li {
             font-size: 4vh}  
@@ -500,6 +509,9 @@ nav li img {
     font-size: 2vw;
 }
 .popup button{
+    font-size: 2vw;
+  }
+  .close {
     font-size: 2vw;
   }
            }

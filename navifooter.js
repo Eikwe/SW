@@ -117,35 +117,55 @@ function loadfooter() {
 document.addEventListener("DOMContentLoaded", loadfooter);
 
 
-
+// Funktion zum Laden des Popup-Fensters
 function loadfenster() {
   document.getElementById("fenster").innerHTML = `
-  <div id="popup" class="popup">
-  <div class="popup-content">
-  <span class="close">&times;</span>
-  <h3> Sie haben Fragen zu unseren Projekten? </h3>
-    Gerne, können sie uns, das P-Seminar, über das Kontaktformular erreichen. <br> <br>
-    <div class="container"> <button class="button-eckig"><a href="kontakt.html">Zum Kontaktformular</a></button>
-    <button class="button-eckig"><span class="close-button" > Nicht jetzt</span></button></div>
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close">&times;</span>
+        <h3>Sie haben Fragen zu unseren Projekten?</h3>
+        Gerne k&ouml;nnen Sie uns, das P-Seminar, &uuml;ber das Kontaktformular erreichen. <br> <br>
+        <div class="container">
+          <button class="button-eckig"><a href="kontakt.html">Zum Kontaktformular</a></button>
+          <button class="button-eckig"><span class="close-button">Nicht jetzt</span></button>
+        </div>
+      </div>
     </div>
-    </div>
-
   `;
 }
 
-document.addEventListener("DOMContentLoaded", loadfenster);
+// Funktion zum Überprüfen der Besuchsdauer und Anzeigen des Popups
+function checkVisitDuration() {
+  var currentTime = new Date().getTime(); // Aktuelle Zeit in Millisekunden
+  var lastVisitTime = localStorage.getItem("lastVisitTime");
+  var popupClosed = localStorage.getItem("popupClosed");
 
+  if (!lastVisitTime || popupClosed === "true") {
+    // Wenn der Besucher zum ersten Mal auf der Seite ist oder das Popup geschlossen wurde
+    localStorage.setItem("lastVisitTime", currentTime);
+    localStorage.setItem("popupClosed", "false");
+  } else {
+    var elapsedTime = currentTime - lastVisitTime;
+    var minutesElapsed = Math.floor(elapsedTime / 60000); // Minuten berechnen
+    if (minutesElapsed >= 1) {
+      // Wenn eine Minute vergangen ist
+      document.getElementById("popup").classList.add("show");
+    }
+  }
+}
 
+// Popup-Fenster laden, wenn das DOM vollständig geladen ist
 document.addEventListener("DOMContentLoaded", function() {
-  setTimeout(function() {
-    document.getElementById("popup").classList.add("show");
-  }, 30000);
+  loadfenster();
+  checkVisitDuration();
 
   document.querySelector(".close").addEventListener("click", function() {
     document.getElementById("popup").style.display = "none";
+    localStorage.setItem("popupClosed", "true"); // Popup wurde geschlossen
   });
+
   document.querySelector(".close-button").addEventListener("click", function() {
     document.getElementById("popup").style.display = "none";
+    localStorage.setItem("popupClosed", "true"); // Popup wurde geschlossen
   });
 });
-

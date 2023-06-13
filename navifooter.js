@@ -116,8 +116,6 @@ function loadfooter() {
 
 document.addEventListener("DOMContentLoaded", loadfooter);
 
-
-
 function loadfenster() {
   document.getElementById("fenster").innerHTML = `
     <div id="popup" class="popup">
@@ -134,30 +132,14 @@ function loadfenster() {
   `;
 }
 
-// Funktion zum Überprüfen der Besuchsdauer und Anzeigen des Popups
-function checkVisitDuration() {
-  var currentTime = new Date().getTime(); // Aktuelle Zeit in Millisekunden
-  var lastVisitTime = localStorage.getItem("lastVisitTime");
-  var popupClosed = localStorage.getItem("popupClosed");
-
-  if (!lastVisitTime || popupClosed === "true") {
-    // Wenn der Besucher zum ersten Mal auf der Seite ist oder das Popup geschlossen wurde
-    localStorage.setItem("lastVisitTime", currentTime);
-    localStorage.setItem("popupClosed", "false");
-  } else {
-    var elapsedTime = currentTime - lastVisitTime;
-    var minutesElapsed = Math.floor(elapsedTime / 60000); // Minuten berechnen
-    if (minutesElapsed >= 1) {
-      // Wenn eine Minute vergangen ist
-      document.getElementById("popup").classList.add("show");
-    }
-  }
-}
+// Popup-Fenster nach 30 Sekunden anzeigen
+setTimeout(function() {
+  document.getElementById("popup").classList.add("show");
+}, 30000); // 30 Sekunden in Millisekunden: 30 * 1000
 
 // Popup-Fenster laden, wenn das DOM vollständig geladen ist
 document.addEventListener("DOMContentLoaded", function() {
   loadfenster();
-  checkVisitDuration();
 
   document.querySelector(".close").addEventListener("click", function() {
     document.getElementById("popup").style.display = "none";

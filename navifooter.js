@@ -1,44 +1,4 @@
-function loadNavigation() {
-  document.getElementById("navigation").innerHTML = `
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GE34BCJEDH"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-GE34BCJEDH');
-    </script>
-    <link href="style.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="Solar-IconD.png">
-    
-    <div class="titelcontainer"> 
-      <h3> Eikwe-Schweinfurt</h3>
-      <nav>
-        <ul>
-          <li><a href="index.html"> Start </a></li>
-          <li><a href="projekte.html"> Projekte </a>
-            <ul>
-              <li><a href="Solarprojekt.html"> Solarprojekt </a></li> 
-              <li><a href="kunstprojekt.html"> Kunstprojekt </a></li>
-            </ul>
-          </li> 
-          <li><a href="aktuelles.html"> Aktuelles </a>
-            <ul>
-              <li><a href="kabelsammlung.html"> Kabelsammlung </a></li>
-              <li><a href="kunstausstellung.html"> Kunstausstellung </a></li>
-              <li><a href="kompakt.html"> Infos kompakt</a></li>
-            </ul>
-          </li>
-          <li><a href="Partnerschaft.html"> Partnerschaft </a></li> 
-          <li><a href="englisch.html"> <img class="englisch" src="englisch.png"></a></li>
-        </ul>
-      </nav>
-    </div>
-  `;
-}
 
-document.addEventListener("DOMContentLoaded", loadNavigation);
 
 
 function loadENavigation() {

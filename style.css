@@ -8,29 +8,41 @@ h1, h2, h3 {
 h1, h2 {
     margin-top: -1vw;
 }
- 
-body {
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  margin: 0 -3%;
+}
+
+header h3 {
+  align-items: center;
+  float: left;
+  font-size: 2.5vw;
+}
+
+body{
     margin: 0 3%;
     font-size: 2.1vw;
-    font-family: sans-serif;
-    scroll-behavior: smooth; /* für Animation*/
-    
-    }
+    font-family: Arial;
+    scroll-behavior: smooth; /* für Animation*/}
     
 ul {   
     box-shadow: 0px 2px 6px;
-    background-color: #bdecb6;  
+    background-color: #8bd38b ;  
 }
 nav ul li{
     position: relative;   
 }
+
 nav ul li a {
     display: block;  
 }
 nav ul li ul{
     display: none;
     position: absolute;
-    background-color:rgb(143, 241, 195);   
+    background-color:#8bd38b;   
 }
 nav ul li:hover ul {
     display: block;
@@ -73,15 +85,13 @@ form input{
     
 }   
 .kontakt-button:hover{
-    background-color:rgb(147, 241, 147);
+    background-color:#afe4a7;
 }
-    
+    /*rgb(105, 202, 226)*/
 .icons a:hover {
- transform: scale(125%);}
+ transform: scale(115%);}
 
-.backgroundblue {
-    background-color:rgb(105, 202, 226);
-}
+
  .Spenden {
    background-image: url("Titelbild.jpg");
    background-size: cover;
@@ -113,7 +123,7 @@ form input{
 }
     
     button:hover {
-    background-color: rgb(63, 236, 63) }
+    background-color:#afe4a7 }
 textarea, input {
     font-size: 0.5em;
 }
@@ -125,7 +135,7 @@ textarea, input {
     
 }
 
-    .container{
+.container{
         display: flex;
         justify-content: space-evenly;
         align-items: center;  
@@ -173,7 +183,7 @@ textarea, input {
    
 }
 .backgroundgreen {
-    background-color: #afe0c9;
+    background-color: #afe4a7;
     padding: 3%;
    
 }
@@ -192,71 +202,70 @@ textarea, input {
   }
   
   .bildundtexta {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   }
   
   .bildundtexta img {
-    animation: slideIn 0.5s ease-in-out;
-    animation-fill-mode: both;
-    animation-delay: 0s;
+  animation: slideIn 0.5s ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 0s;
   }
   
   .bildundtexta img:nth-child(2) {
-    animation-delay: 0.3s; 
+  animation-delay: 0.3s; 
   }
   
-  .bildundtexta img:nth-child(3) {
-    animation-delay: 0.7s; 
+.bildundtexta img:nth-child(3) {
+  animation-delay: 0.7s; 
   }
   .bildundtexta img:nth-child(4) {
-    animation-delay: 1s; 
+  animation-delay: 1s; 
   }
 
   
 
 .texto{
-    flex: 0.7;
-    margin: 0 1% 0 1%;
+  flex: 0.7;
+  margin: 0 1% 0 1%;
 
     
 }
 .bildlinks {
-    width: 60%;
-    margin-right: 0.8vw;
+  width: 60%;
+  margin-right: 0.8vw;
 
 }
 .bildlinks {
-    width: 70%;
-    margin-right: 5%;
+  width: 70%;
+  margin-right: 5%;
 }
 .bilddrei{
-    
-    height: 20vw;
-    width: auto;
+  height: 20vw;
+  width: auto;
   
 }
 .bildrechts {
-    width: 60%;
-    margin-left: 0.8vw;
+  width: 60%;
+  margin-left: 0.8vw;
 
 }
 footer div {
-   
-    display: block;
-    margin: 3% 0 0 2%;
+   display: inline-block;
+   margin: 3% 0 0 2%;
 }
 footer a {
-    color: white;
+    color: black;
 }
 footer img {
     height: 12vw;
     width: auto;
    }
 footer {
-    background-color:rgb(78, 40, 40);
+    background-color:#517c51;;
     display: flex;
     justify-content: space-between;
+    margin: 0 -3%;
 }
 
   .einführungsbild {
@@ -266,7 +275,7 @@ footer {
 .icons {
     display:flex;
     justify-content: space-between;
-    padding: 4vw;
+    padding: 3vw;
     text-align: center;
    
 } 
@@ -361,18 +370,6 @@ figure img {
     object-fit: cover;
 }
 
-.titelcontainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-
-
-}
-.titelcontainer h3 {
-    align-items: center;
-    float: left;
-    font-size: 120%;
-}
 
 nav li{
     font-size: 1.3em;
@@ -414,6 +411,7 @@ nav li img {
     text-align: center;
     font-size: 4vw;
     background-color: white;
+    cursor: pointer;
     
   }
   .popup button{
@@ -440,7 +438,7 @@ nav li img {
   .popup.show {
     display: block;
   }
-@media only screen and (min-width: 1010px) {
+@media only screen and (min-width: 1050px) {
 
     nav li img {
         height: 3.4vh;}
@@ -518,7 +516,12 @@ nav li img {
 
 @media only screen and (min-width: 1310px) {
     body { 
-    margin-left: 10%;
-    margin-right: 10%;   
+    margin: 0 10%; 
                 
-            }}
+            }
+  header{
+    margin: 0 -10%;
+  }
+  footer {
+    margin: 0 -10%;
+  }}

@@ -15,9 +15,16 @@ header {
   align-items: center; 
   margin: 0 -3%;
 }
+header img {
+  height: 0.9em;
+  width: auto;
+  align-items: center;
+  margin-bottom: -7%;
+}
+
 
 header h3 {
-  align-items: center;
+
   float: left;
   font-size: 2.5vw;
 }
@@ -61,10 +68,7 @@ nav a:hover, footer div a:hover {
  background-color: white;
  color: black;
     }
-.icons a {
-    color: white;
-    font-size: 3vw;
-}
+
 form input{
     height: 3vw;
     width: 100%;
@@ -88,6 +92,11 @@ form input{
     background-color:#afe4a7;
 }
     /*rgb(105, 202, 226)*/
+
+    .icons a {
+      color: white;
+      font-size: 3vw;
+  }
 .icons a:hover {
  transform: scale(115%);}
 
@@ -372,16 +381,11 @@ figure img {
 
 
 nav li{
-    font-size: 1.3em;
+    font-size: 1em;
     margin: 0 1.3vw 0 0; 
     display: inline-block;
   
 }
-nav li img {
-    height: 1em;
-    width: auto;
-    align-items: center;}
-
 
 
 .siebzigprozentgröße {
@@ -440,13 +444,7 @@ nav li img {
   }
 @media only screen and (min-width: 1050px) {
 
-    nav li img {
-        height: 3.4vh;}
-        
-    nav li , footer a{
-        font-size: 4vh;
-        
-    }
+ 
    
     .rechteck {
         width: 20vw;

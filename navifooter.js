@@ -1,50 +1,6 @@
 
 
 
-function loadENavigation() {
-  document.getElementById("Enavigation").innerHTML = `
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GE34BCJEDH"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-GE34BCJEDH');
-    </script>
-    <link href="style.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="Solar-IconD.png">
-    
-    <div class="titelcontainer">
-      <h3> Eikwe-Schweinfurt</h3>
-      <nav>
-        <ul>
-          <li><a href="englisch.html">start</a></li>
-          <li><a href="eprojects.html">projects</a>
-            <ul>
-              <li><a href="eSolarprojekt.html">solar project</a></li> 
-              <li><a href="eartproject.html">art project</a></li>  
-            </ul>
-          </li>
-          <li><a href="eaktuell.html">currently</a>
-            <ul>
-              <li><a href="ekabelsammlung.html">cable collection</a></li>
-              <li><a href="ekompakt.html"> information cable </a></li>
-              <li><a href="eexhibition.html">exhibition</a></li>
-              
-            </ul>
-          </li>
-          <li><a href="ePartnerschaft.html">partnership</a></li> 
-          <li><a href="index.html"><img class="englisch" src="deutsch.png"></a></li>
-        </ul>
-      </nav>
-    </div>
-  `;
-}
-
-document.addEventListener("DOMContentLoaded", loadENavigation);
-
-
 
 
 function loadefooter() {
@@ -59,20 +15,10 @@ function loadefooter() {
   `;
 }
 
-document.addEventListener("DOMContentLoaded", loadefooter);
 
 
 
-function loadfooter() {
-  document.getElementById("footer").innerHTML = `
-  <footer> 
-  <div> <a href="kontakt.html"> Kontakt </a> <br>
-  <a  href="Impressum.html">Impressum</a></div>
-  <a href="index.html"> <img src="LogoRathenau.jpg">
-</footer>
 
-  `;
-}
 
 document.addEventListener("DOMContentLoaded", loadfooter);
 

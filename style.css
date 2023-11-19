@@ -14,6 +14,8 @@ header {
   justify-content: space-between;
   align-items: center; 
   margin: 0 -3%;
+  font-size: 2.3vw;
+  
 }
 header img {
   height: 0.9em;
@@ -57,7 +59,7 @@ nav ul li:hover ul {
 }
 nav ul li ul li {
     white-space: nowrap;
-    font-size: 1em;
+   
 }
 a {
     text-decoration: none;
@@ -69,16 +71,17 @@ nav a:hover, footer div a:hover {
  color: black;
     }
 
-form input{
-    height: 3vw;
+form input, form textarea{
+    height: 8vw;
+    font-size: 4vw;
     width: 100%;
   }
-  form textarea{
-    height: 5vw;
-    width: 100%;
-  }
+form textarea {
+  height: 12vw;
+}
+ 
   label {
-    font-size: 70%;
+    font-size: 4vw;
     float: left;
   }
 .kontakt-button {
@@ -108,18 +111,23 @@ form input{
    padding: 4vw;
     padding-left: 6vw;}    
 
- button {
-    font-size: 1.8vw;
-    font-weight: bold;
-    padding: 2% 5%;
-    border-radius: 1em;
-    border-color: green;
-    cursor: pointer;
-    }
+button {
+  font-size: 1.8vw;
+  font-weight: bold;
+  padding: 2% 5%;
+  border-radius: 1em;
+  border-color: green;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:#afe4a7
+}
+
     .newsbutton {
         font-size: 2.3vw;
         width:39vw;
-        height: 20vw;
+        height: 23vw;
         color: white;
         border-color:  white;
         opacity: 0.85;
@@ -131,8 +139,7 @@ form input{
     opacity: 1;
 }
     
-    button:hover {
-    background-color:#afe4a7 }
+
 textarea, input {
     font-size: 0.5em;
 }
@@ -444,8 +451,17 @@ nav li{
   }
 @media only screen and (min-width: 1050px) {
 
- 
-   
+  label {
+    font-size: 2vw;
+    float: left;
+  }
+  form input, form textarea{
+    height: 3vw;
+    font-size: 2vw;
+  }
+  form textarea {
+    height: 12vw;
+  }
     .rechteck {
         width: 20vw;
         height: 27vw;
@@ -495,9 +511,7 @@ nav li{
 .containerteil {
   font-size: 2vw;
 }
-
-          nav ul li ul li {
-            font-size: 4vh}  
+ 
 
 .popup{
      width: 40vw;
@@ -518,8 +532,11 @@ nav li{
                 
             }
   header{
-    margin: 0 -10%;
+    margin: 0 -13%;
+  }
+  header h3 {
+    margin: 0 0 0 1%;
   }
   footer {
-    margin: 0 -10%;
+    margin: 0 -13%;
   }}

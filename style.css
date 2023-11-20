@@ -455,13 +455,11 @@ nav li{
     font-size: 2vw;
     float: left;
   }
-  form input, form textarea{
+  form input {
     height: 3vw;
     font-size: 2vw;
   }
-  form textarea {
-    height: 12vw;
-  }
+ 
     .rechteck {
         width: 20vw;
         height: 27vw;

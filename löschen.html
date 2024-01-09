@@ -1,6 +1,104 @@
-<link href="style.css" rel="stylesheet">
-
-<div class="zweiercontainer">
-    <img  src="ausstellung1.jpg" style="padding-right: 8%">
-    <img src="ausstellung2.jpg" style="padding-right: 8%" >
+<div id="slider"> 
+    <figure> <!--hier sind die Bilder dieser Seite -->
+      <img src="Titelbild.jpg">
+      <img src="Schaukasten.jpg">
+      <img src="GesamtbildSW.jpg">
+      <img src="Solar.jpg">
+      <img src="Ubuntu.jpg">
+      <img src="Advent.jpeg">
+      <img src="Marktplatz.jpeg">
+      
+    </figure>
+    <div id="slider-nav">  <!-- Navigationselemente für vorheriges und nächstes Bild -->
+      <div id="prev-slide">&lt;</div>
+      <div id="next-slide">&gt;</div>
     </div>
+    <center>
+    <div id="slider-controls">    <!-- Radiobuttons für die Bildauswahl im Slider -->
+      <input type="radio" name="slider-radio" id="radio1" checked>
+      <input type="radio" name="slider-radio" id="radio2">
+      <input type="radio" name="slider-radio" id="radio3">
+      <input type="radio" name="slider-radio" id="radio4">
+      <input type="radio" name="slider-radio" id="radio5">
+      <input type="radio" name="slider-radio" id="radio6">
+      <input type="radio" name ="slider-radio" id="radio7">
+    </div>
+  </div>
+   </center>
+  
+  <br>
+
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const prevSlide = document.getElementById("prev-slide");
+    const nextSlide = document.getElementById("next-slide");
+    const figure = document.querySelector("#slider figure");
+    const images = figure.querySelectorAll("img");
+    const radioButtons = document.querySelectorAll("#slider-controls input[type='radio']");
+    let aktuellerindex = 0;
+    let isAutoplay = true;
+    let autoplayInterval;
+  
+    function startAutoplay() {
+      autoplayInterval = setInterval(() => {
+        if (isAutoplay) {
+          aktuellerindex = (aktuellerindex + 1) % images.length;
+          goToSlide(aktuellerindex);
+        }
+      }, 3000);
+    }
+  
+    function stopAutoplay() {
+      clearInterval(autoplayInterval);
+    }
+  
+    function goToSlide(index) {
+      aktuellerindex = index;
+      figure.style.left = `-${aktuellerindex * 100}%`;
+      updateRadioButton();
+      stopAutoplay();
+      isAutoplay = false;
+    }
+  
+    function goToPrevSlide() {
+      aktuellerindex = (aktuellerindex - 1 + images.length) % images.length;
+      goToSlide(aktuellerindex);
+    }
+  
+    function goToNextSlide() {
+      aktuellerindex = (aktuellerindex + 1) % images.length;
+      goToSlide(aktuellerindex);
+    }
+  
+    function updateRadioButton() {
+      radioButtons[aktuellerindex].checked = true;
+    }
+  
+    prevSlide.addEventListener("click", goToPrevSlide);
+    nextSlide.addEventListener("click", goToNextSlide);
+  
+    radioButtons.forEach((radio, i) => {
+      radio.addEventListener("change", () => goToSlide(i));
+    });
+  
+    figure.addEventListener("mouseenter", stopAutoplay);
+    figure.addEventListener("mouseleave", () => {
+      startAutoplay();
+      isAutoplay = true;
+    });
+  
+    startAutoplay();
+  });
+  
+  function scrollFunction(targetId) {
+    const link = document.querySelector(`a[href="#${targetId}"]`);
+    link.addEventListener('click', function(event) {
+      event.preventDefault();
+      const element = document.getElementById(targetId);
+      element.scrollIntoView({ behavior: 'smooth' });
+    });
+  }
+  
+  ['gründe', 'nabig', 'finanzierung', 'spenden'].forEach(scrollFunction);
+  

@@ -66,6 +66,25 @@
 </form>
 
 
+
+<button onclick="teilen()">Teilen</button>
+<script>
+  function teilen() {
+      if (navigator.share) {
+          navigator.share({
+              title: 'Solarprojekt Eikwe-Schweinfurt',
+              text: 'Hallo, dies ist die Website des P-Seminars. Hier finden Sie alle Informationen zum Solarprojekt in Eikwe. Besuchen Sie die Website: https://eikwe.github.io/SW',
+              url: 'https://eikwe.github.io/SW',
+          })
+          .then(() => console.log('Erfolgreich geteilt!'))
+          .catch((error) => console.error('Fehler beim Teilen:', error));
+      } else {
+          // Fallback, wenn die share API nicht unterstützt wird
+          alert('Die Share-API wird von diesem Browser nicht unterstützt. Teilen Sie die Website manuell: https://eikwe.github.io/SW');
+      }
+  }
+</script>
+<br>
 <footer>
   <div> <a href="kontakt.html"> Kontakt </a> <br>
   <a  href="Impressum.html">Impressum</a></div>

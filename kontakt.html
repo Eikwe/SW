@@ -35,15 +35,7 @@
 </nav>
 </header>
  
-
-
 <body>
-  
-  
-    
-
-
-
 <h2> Kontakt </h2>
 
 <form
@@ -61,19 +53,20 @@
 <label>Nachricht: </label>
 <input name="message" placeholder="Ihre Nachricht..." required style="height: 4em">
 <br> 
-<br>
+<br> <div style="justify-content: space-between"> 
   <button type="submit" class="kontakt-button" style="border-radius: 0;"> Senden</button>
 </form>
 
 
 
-<button onclick="teilen()">Teilen</button>
+<img src="share-button.png" alt="Teilen" onclick="teilen()" style="cursor: pointer; width: 7vw; float: right;">
+
 <script>
   function teilen() {
       if (navigator.share) {
           navigator.share({
               title: 'Solarprojekt Eikwe-Schweinfurt',
-              text: 'Hallo, dies ist die Website des P-Seminars. Hier finden Sie alle Informationen zum Solarprojekt in Eikwe. Besuchen Sie die Website: https://eikwe.github.io/SW',
+              text: 'Hallo, dies ist die Website des P-Seminars. Hier finden Sie alle Informationen zum Solarprojekt in Eikwe. Besuchen Sie die Website: ',
               url: 'https://eikwe.github.io/SW',
           })
           .then(() => console.log('Erfolgreich geteilt!'))
@@ -83,7 +76,9 @@
           alert('Die Share-API wird von diesem Browser nicht unterstützt. Teilen Sie die Website manuell: https://eikwe.github.io/SW');
       }
   }
-</script>
+</script></div>
+<br>
+<br>
 <br>
 <footer>
   <div> <a href="kontakt.html"> Kontakt </a> <br>

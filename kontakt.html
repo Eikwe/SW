@@ -1,88 +1,55 @@
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZV3XZ65FL1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-ZV3XZ65FL1');
-</script>
- <link href="style.css" rel="stylesheet">
- <link rel="icon" type="image/png" href="Solar-IconD.png">
-  <script src="index.js"></script> 
-  <title>Kontakt</title>
-<header>
-<h3> Eikwe-Schweinfurt</h3>
-<nav>
- <ul>
-   <li><a href="index.html"> Start </a></li>
-   <li><a href="projekte.html"> Projekte </a>
-     <ul>
-       <li><a href="Solarprojekt.html"> Solarprojekt </a></li> 
-       <li><a href="kunstprojekt.html"> Kunstprojekt </a></li>
-     </ul>
-   </li> 
-   <li><a href="aktuelles.html"> Aktuelles </a>
-     <ul>
-       <li><a href="kabelsammlung.html"> Kabelsammlung </a></li>
-       <li><a href="kunstausstellung.html"> Kunstausstellung </a></li>
-       <li><a href="kompakt.html"> Infos kompakt</a></li>
-     </ul>
-   </li>
-   <li><a href="Partnerschaft.html"> Partnerschaft </a></li> 
-   <li><a href="econtact.html"> <img class="englisch" src="englisch.png"></a></li>
- </ul>
-</nav>
-</header>
+  gtag('config', 'G-GE34BCJEDH');
+</script> 
+
+
+<head>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Icon.jpg">      
+    <title>Kontakt</title>
+
+</head><body>
+  
+       
+  
+  <nav>
+    <ul>
+      <li><a href="index.html"> Start </a></li>
+      <li><a href="projekte.html"> Projekte </a>
+        <ul> <li><a href="Solarprojekt.html"> Solarprojekt </a></li> 
+        <li><a href="kunstprojekt.html"> Kunstprojekt </a></li>  </ul></li> 
+      <li><a href="aktuelles.html"> Aktuelles </a>
+        <ul> <li><a href="kabelsammlung.html"> Kabelsammlung </a></li>
+        <li><a href="kunstausstellung.html"> Kunstausstellung </a></li>
+        <li><a href="kompakt.html"> Infos kompakt</a></li></ul> </li>
+      <li><a href="Partnerschaft.html">Partnerschaft </a></li> 
+      <li><a href="econtact.html"> <img class="englisch" src="englisch.png"></a></li>
+    </ul>
+  </nav>
  
-<body>
 <h2> Kontakt </h2>
+<h2> Noch nicht funktionsfähig! Noch im Aufbau!</h2>
 
-<form
-  action="https://formspree.io/f/xlekydbr"
-  method="POST">
-
-  <label>E-Mailadresse: </label>
-  <input type="email" name="email" placeholder="name@domain.com" required>
-<br>
-<br>
-  <label> Name: </label>
-  <input type="text" name="name" placeholder="Ihr Name (optional)">
-<br>
-<br>
-<label>Nachricht: </label>
-<input name="message" placeholder="Ihre Nachricht..." required style="height: 4em">
-<br> 
-<br> <div style="justify-content: space-between"> 
-  <button type="submit" class="kontakt-button" style="border-radius: 0;"> Senden</button>
+<form id="contact-form">
+  <label for="name">Name:</label>
+  <input type="text" id="name" required>
+  
+  <label for="email">E-Mail:</label>
+  <input type="email" id="email" required>
+  
+  <label for="message">Nachricht:</label>
+  <textarea id="message" required></textarea>
+  
+  <button type="submit">Absenden</button>
 </form>
 
-
-
-<img src="share-button.png" alt="Teilen" onclick="teilen()" style="cursor: pointer; width: 7vw; float: right;">
-
-<script>
-  function teilen() {
-      if (navigator.share) {
-          navigator.share({
-              title: 'Solarprojekt Eikwe-Schweinfurt',
-              text: 'Hallo, dies ist die Website des P-Seminars. Hier finden Sie alle Informationen zum Solarprojekt in Eikwe. Besuchen Sie die Website: ',
-              url: 'https://eikwe.github.io/SW',
-          })
-          .then(() => console.log('Erfolgreich geteilt!'))
-          .catch((error) => console.error('Fehler beim Teilen:', error));
-      } else {
-          // Fallback, wenn die share API nicht unterstützt wird
-          alert('Die Share-API wird von diesem Browser nicht unterstützt. Teilen Sie die Website manuell: https://eikwe.github.io/SW');
-      }
-  }
-</script></div>
 <br>
-<br>
-<br>
-<footer>
-  <div> <a href="kontakt.html"> Kontakt </a> <br>
+<footer > 
+  <div class="links"> <a  href="kontakt.html"> Kontakt </a> <br>
   <a  href="Impressum.html">Impressum</a></div>
   <a href="index.html"> <img src="LogoRathenau.jpg">
-
-</footer>
+    </footer>

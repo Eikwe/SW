@@ -1,67 +1,50 @@
+
 document.addEventListener("DOMContentLoaded", function() {
+  const slider = document.getElementById("slider");
+  const figure = slider.querySelector("figure");
+  const images = figure.querySelectorAll("img");
+  let currentIndex = 0;
+  const radios = document.querySelectorAll('input[name="slider"]');
   const prevSlide = document.getElementById("prev-slide");
   const nextSlide = document.getElementById("next-slide");
-  const figure = document.querySelector("#slider figure");
-  const images = figure.querySelectorAll("img");
-  const radioButtons = document.querySelectorAll("#slider-controls input[type='radio']");
-  let currentIndex = 0;
-  let isAutoplay = true;
-  let autoplayInterval;
 
-  const startAutoplay = function() {
-    autoplayInterval = setInterval(function() {
-      if (isAutoplay) {
-        currentIndex = (currentIndex + 1) % images.length;
-        goToSlide(currentIndex);
-      }
-    }, 3000);
-  };
-
-  const stopAutoplay = function() {
-    clearInterval(autoplayInterval);
-  };
-
-  const goToSlide = function(index) {
-    currentIndex = index;
+  function updateSlider() {
+    radios[currentIndex].checked = true;
     figure.style.left = `-${currentIndex * 100}%`;
-    updateRadioButton();
-    stopAutoplay();
-    isAutoplay = false;
-  };
-
-  const goToPrevSlide = function() {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    goToSlide(currentIndex);
-  };
-
-  const goToNextSlide = function() {
-    currentIndex = (currentIndex + 1) % images.length;
-    goToSlide(currentIndex);
-  };
-
-  const updateRadioButton = function() {
-    radioButtons[currentIndex].checked = true;
-  };
-
-  prevSlide.addEventListener("click", goToPrevSlide);
-  nextSlide.addEventListener("click", goToNextSlide);
-
-  for (let i = 0; i < radioButtons.length; i++) {
-    radioButtons[i].addEventListener("change", function() {
-      goToSlide(i);
-    });
   }
 
-  figure.addEventListener("mouseenter", function() {
-    stopAutoplay();
-    isAutoplay = false;
+  function navigateSlide(direction) {
+    currentIndex = (currentIndex + direction + images.length) % images.length;
+    updateSlider();
+  }
+
+  slider.addEventListener("click", (event) => {
+    if (event.target === prevSlide) {
+      navigateSlide(-1);
+    } else if (event.target === nextSlide) {
+      navigateSlide(1);
+    }
   });
 
-  figure.addEventListener("mouseleave", function() {
-    startAutoplay();
-    isAutoplay = true;
+  radios.forEach(function(radio, index) {
+    radio.addEventListener('change', function() {
+      currentIndex = index;
+      updateSlider();
+    });
   });
-
-  startAutoplay();
 });
 
+function teilen() {
+  if (navigator.share) {
+      navigator.share({
+          title: 'Solarprojekt Eikwe-Schweinfurt',
+          text: 'Hallo, dies ist die Website des P-Seminars. Hier finden Sie alle Informationen zum Solarprojekt in Eikwe. Besuchen Sie die Website: ',
+          url: 'https://eikwe.github.io/SW',
+      })
+      .then(() => console.log('Erfolgreich geteilt!'))
+      .catch((error) => console.error('Fehler beim Teilen:', error));
+  } else {
+      // Fallback, wenn die share API nicht unterstützt wird
+      alert('Die Share-API wird von diesem Browser nicht unterstützt. Teilen Sie die Website manuell: https://eikwe.github.io/SW');
+  }
+}

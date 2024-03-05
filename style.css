@@ -243,19 +243,17 @@ container img {
 
 footer div {
   display: inline-block;
-  margin: 3% 0 0 2%;
+  margin: 3% 0 3% 3%;
 }
 footer a {
   color: black;
 }
-footer img {
-  height: 12vw;
-  width: auto;
-  }
+
 footer {
   background-color:#517c51;;
   display: flex;
   justify-content: space-between;
+
 }
 .icons {
   display:flex;
